@@ -1,27 +1,32 @@
 ---
 id: 22
-title: 'Format Time &#8220;Twitter-Style&#8221;'
+title: 'Format Time &quot;Twitter-Style&quot;'
 date: 2011-01-23T22:28:21+00:00
 author: Levi Hackwith
 layout: post
 guid: http://www.levihackwith.com/?p=22
 permalink: /format-time-twitter-style/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
 tags:
   - PHP
 ---
-When you post a Tweet, it get&#8217;s timestamped with something like &#8220;posted 20 minutes ago&#8221;. If you&#8217;d like to replicate this behavior in PHP, here&#8217;s a function you can use:
+When you post a Tweet, it get&rsquo;s timestamped with something like
+&quot;posted 20 minutes ago&quot;. If you&rsquo;d like to replicate this 
+behavior in PHP, here&rsquo;s a function you can use:
 
-<!--more-->
-
-<pre class="brush: php; title: ; notranslate" title="">function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
-    $seconds = round((time() - $timestamp)); // How many seconds have elapsed
-    $minutes = round((time() - $timestamp) / 60); // How many minutes have elapsed
-    $hours = round((time() - $timestamp) / 60 / 60); // How many hours have elapsed
-    $days = round((time() - $timestamp) / 60 / 60 / 24); // How many hours have elapsed
+```php
+function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
+    // How many seconds have elapsed
+    $seconds = round((time() - $timestamp));
+    // How many minutes have elapsed
+    $minutes = round((time() - $timestamp) / 60);
+    // How many hours have elapsed
+    $hours = round((time() - $timestamp) / 60 / 60);
+    // How many hours have elapsed
+    $days = round((time() - $timestamp) / 60 / 60 / 24);
     $seconds_string = $seconds;
     $minutes_string = $minutes;
     $hours_string = $hours;
@@ -75,4 +80,5 @@ When you post a Tweet, it get&#8217;s timestamped with something like &#8220;pos
             }
             break;
     }
-}</pre>
+}
+```
