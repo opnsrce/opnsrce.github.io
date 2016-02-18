@@ -1,0 +1,7 @@
+url: http://www.levihackwith.com
+name: Levihackwith.com
+description: Ship Now. Iterate Later.
+highlighter: 'rouge'
+markdown: redcarpet
+redcarpet:
+  extensions: []

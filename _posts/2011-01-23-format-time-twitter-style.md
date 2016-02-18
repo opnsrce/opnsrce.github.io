@@ -1,0 +1,78 @@
+---
+id: 22
+title: 'Format Time &#8220;Twitter-Style&#8221;'
+date: 2011-01-23T22:28:21+00:00
+author: Levi Hackwith
+layout: post
+guid: http://www.levihackwith.com/?p=22
+permalink: /format-time-twitter-style/
+icy_video_embed_code:
+  - 
+categories:
+  - Code Snippets
+tags:
+  - PHP
+---
+When you post a Tweet, it get&#8217;s timestamped with something like &#8220;posted 20 minutes ago&#8221;. If you&#8217;d like to replicate this behavior in PHP, here&#8217;s a function you can use:
+
+<!--more-->
+
+<pre class="brush: php; title: ; notranslate" title="">function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
+    $seconds = round((time() - $timestamp)); // How many seconds have elapsed
+    $minutes = round((time() - $timestamp) / 60); // How many minutes have elapsed
+    $hours = round((time() - $timestamp) / 60 / 60); // How many hours have elapsed
+    $days = round((time() - $timestamp) / 60 / 60 / 24); // How many hours have elapsed
+    $seconds_string = $seconds;
+    $minutes_string = $minutes;
+    $hours_string = $hours;
+    $days_string = $days;
+    switch($unit) {
+        case "seconds": return $seconds;
+            break;
+        case "minutes": return $minutes;
+            break;
+        case "hours": return $hours;
+            break;
+        case "days": return $days;
+            break;
+        default: // No time unit specified, return the most relevant
+            if($seconds &lt; 60) { // Less than a minute has passed
+                if($seconds != 1) {
+                    $seconds_string .= " seconds ago";
+                }
+                else {
+                    $seconds_string .= " second ago";
+                }
+                return ($show_unit) ? $seconds_string : $seconds;
+            }
+            elseif($minutes &lt; 60) { // Less than an hour has passed
+                if($minutes != 1) {
+                    $minutes_string .= " minutes ago";
+                }
+                else {
+                    $minutes_string .= " minute ago";
+                }
+                return ($show_unit) ? $minutes_string : $minutes;
+                ;
+            }
+            elseif($hours &lt; 24) { // Less than a day has passed
+                if($hours != 1) {
+                    $hours_string .= " hours ago";
+                }
+                else {
+                    $hours_string .= " hour ago";
+                }
+                return ($show_unit) ? $hours_string : $hours;
+            }
+            else { // More than a day has passed
+                if($days != 1) {
+                    $days_string .= " days ago";
+                }
+                else {
+                    $days_string .= " day ago";
+                }
+                return ($show_unit) ? $days_string : $days;
+            }
+            break;
+    }
+}</pre>
