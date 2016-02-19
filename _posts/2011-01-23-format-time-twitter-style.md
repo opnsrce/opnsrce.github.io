@@ -17,7 +17,7 @@ When you post a Tweet, it get&rsquo;s timestamped with something like
 &quot;posted 20 minutes ago&quot;. If you&rsquo;d like to replicate this 
 behavior in PHP, here&rsquo;s a function you can use:
 
-```php
+~~~php
 function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
     // How many seconds have elapsed
     $seconds = round((time() - $timestamp));
@@ -81,4 +81,4 @@ function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
             break;
     }
 }
-```
+~~~

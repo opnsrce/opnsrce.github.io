@@ -53,7 +53,7 @@ retrieve data from the API in a given format (in this case, XML).
 
 ### The get_data() method
 
-```ruby
+~~~ruby
 # Retrieves the response from a URL in the requested format
 #
 # * url (string): The URL that NET::HTTP will be going to to retrieve the
@@ -85,7 +85,7 @@ def get_data(url, format, &block)
     data = yield data if block_given?
     return data;
 end
-```
+~~~
 
 This function is rather straight forward: it grabs data from the passed in URL
 and returns it in the passed in format. If a code block is passed in, the data
@@ -93,13 +93,13 @@ is run through it before being returned. This function is one of the main
 workhorses of my class, being called by virtually every public method.
 Here&rsquo;s an example of another class method that calls ``get_data()``:
 
-```ruby
+~~~ruby
 # Retrieves the 'blog-post' set for the given site in the given format
 def get_blog_posts(site, format)
     url = generate_url('blog-posts', format, site);
     return get_data(url, format);
 end
-```
+~~~
 
 The ``get_blog_posts()`` method calls ``generate_url()`` (more on that method
 later) and sends the URL it returns, along with the requested format (e.g.
@@ -108,13 +108,13 @@ posts for the passed in site (e.g., &quo;graphicriver&rsquo;).
 
 ### The generate_url() Method
 
-```ruby
+~~~ruby
 # Generates the URL used by get_data
 def generate_url(api_command, format, params = nil)
     # @base_url and @api_version are declared in initialize()
     return "#{@base_url}/#{@api_version}/#{api_command}:#{params}.#{format}";
 end
-```
+~~~
 
 Alright, I&rsquo;ll admit this function looks a little..convoluted. Hopefully,
 once I explain how calls to the Envato API work, it&rsquo;ll make more sense.
@@ -134,13 +134,13 @@ version 2 of the API in XML format (whew!), you would use this URL:
 
 ### The get\_popular\_items() Method
 
-```ruby
+~~~ruby
 # Retrieves the 'popular' set for the given site in the given format
 def get_popular_items(site, format)
     url = generate_url('popular', format, site);
     return get_data(url, format)
 end
-```
+~~~
 
 While not a core method of my class, this is the method we&rsquo;ll be using
 to get the thumbnails used in our generated image. It&rsquo;s virtually
@@ -151,7 +151,7 @@ detail regarding how it works.
 
 This is the class we&rsquo;ll use to generate our final image:
 
-```ruby
+~~~ruby
 require 'RMagick';
 
 # A class that generates a single image out of an of image paths in an X by Y
@@ -225,7 +225,7 @@ class AdGenerator
         end
     end
 end
-```
+~~~
 
 This may seem a little overwhelming, so let me break down what&rsquo;s going on
 in this class
@@ -238,20 +238,20 @@ the API to create the size of image we want.
 
 ## Creating the Final Image
 
-```ruby
+~~~ruby
 def generate_ad(rows, cols, save_path = nil)
     if(enough_images?(rows, cols)) then
         images = @images;
         # Create ImageList representing the image we're trying to create
         ad = Magick::ImageList.new;
 ...
-```
+~~~
 
 In addition to checking if we have enough images, here we&rsquo;re copying the
 images from the @images class property into their own array and creating a new
 ImageList that will store the final image we want to create.
 
-```
+~~~
 1.upto(rows) do
     # Create new ImageList for each row requested
     image_list = Magick::ImageList.new;
@@ -267,7 +267,7 @@ ImageList that will store the final image we want to create.
     # to create
     ad.push(image_list.append(false));
 ...
-```
+~~~
 
 Here we perform a loop for each row we want our image to have. Inside that loop
 we create a new ImageList object that will act as our row image. We then
@@ -276,7 +276,7 @@ images to our original &quo;row&rsquo; image list. Once we&rsquo;ve added
 enough images to make a single row, we merge all the images together into a
 single long image and add that image to our final product.
 
-```ruby
+~~~ruby
 ...
             if save_path.nil? then
                 # No save path, so just return the final composite image
@@ -288,7 +288,7 @@ single long image and add that image to our final product.
         end
     end
 end
-```
+~~~
 
 Once we&rsquo;ve added all the rows of images to the final image, we check to
 see if there&rsquo;s a save path specified. If there is a path, we save the
@@ -297,7 +297,7 @@ we simply return the ``imageList`` object.
 
 ## Using the AdGenerator
 
-```ruby
+~~~ruby
 require 'envato_api';
 require 'ad_generator';
 
@@ -312,7 +312,7 @@ end
 ad_generator = AdGenerator.new(thumbnails);
 ad = ad_generator.generate_ad(5, 5);
 ad.write('ad.jpg');</pre>
-```
+~~~
 
 ## Final Thoughts
 
