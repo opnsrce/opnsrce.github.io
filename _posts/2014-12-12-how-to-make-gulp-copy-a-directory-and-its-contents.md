@@ -7,7 +7,7 @@ layout: post
 guid: http://www.levihackwith.com/?p=366
 permalink: /how-to-make-gulp-copy-a-directory-and-its-contents/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109293
 categories:
@@ -16,12 +16,17 @@ categories:
 tags:
   - Gulp.js
 ---
-I just got done switching one of my [side-projects](http://digitalresume.herokuapp.com/users/54530e03c575dc86d61d22f8) over to [Gulp](http://gulpjs.com/) for the build process and I kept struggling with how to copy multiple folders from the `src` directory to the `build` directory in such a way that the directory&#8217;s contents _and_ its original folder structure are preserved. Basically, I was trying to achieve this:
-  
-<!--more-->
 
-`</p>
-<pre>
+[1]: http://digitalresume.herokuapp.com/users/54530e03c575dc86d61d22f8
+[2]: http://gulpjs.com/
+
+I just got done switching one of my [side-projects][1] over to [Gulp][2] for
+the build process and I kept struggling with how to copy multiple folders from
+the ``src`` directory to the ``build`` directory in such a way that the
+directory&rsquo;s contents _and_ its original folder structure are preserved.
+Basically, I was trying to achieve this:
+
+~~~
 src // Copy everything under src
   ->public
     ->pubFile1
@@ -36,55 +41,60 @@ build // Destination folder (correct structure)
     ->pubFile2
   ->vendor
     ->vendorFile1
-    ->vendorFile2  
-</pre>
-<p>`
+    ->vendorFile2
+~~~
 
 But instead I kept getting this:
 
-`</p>
-<pre>
+~~~
 build // Destination folder (correct structure)
   ->pubFile1
   ->pubFile2
   ->vendorFile1
-  ->vendorFile2  
-</pre>
-<p>`
+  ->vendorFile2
+~~~
 
-Here&#8217;s what I had for my `copy` task in Gulp:
+Here&rsquo;s what I had for my `copy` task in Gulp:
 
-<pre class="brush: jscript; title: ; notranslate" title="">...
-    gulp.task('copy', ['clean'], function () {
-        return gulp.src(['src/public/**/*', 'src/vendor/**/*'])
-          .pipe(gulp.dest('build'));
-    });
-</pre>
+~~~js
+gulp.task('copy', ['clean'], function () {
+  return gulp.src(['src/public/**/*', 'src/vendor/**/*'])
+    .pipe(gulp.dest('build'));
+});
+~~~
 
 What I needed to set it to was this:
 
-<pre class="brush: jscript; title: ; notranslate" title="">...
-    gulp.task('copy', ['clean'], function () {
-        return gulp.src(['src/public/**/*', 'src/vendor/**/*'], {
-            base: 'src'
-        }).pipe(gulp.dest('build'));
-    });
-</pre>
+~~~js
+...
+gulp.task('copy', ['clean'], function () {
+    return gulp.src(['src/public/**/*', 'src/vendor/**/*'], {
+        base: 'src'
+    }).pipe(gulp.dest('build'));
+});
+~~~
 
-The `base` config option tells gulp where to start copying _from_. It wouldn&#8217;t matter how many other folders we had put in the path before `src`, gulp would still duplicate all directories that are listed after `src` in the path. If we wanted to copy more directories, we&#8217;d just specify a different base:
+The ``base`` config option tells gulp where to start copying _from_. It
+wouldn&rsquo;t matter how many other folders we had put in the path before
+``src``, gulp would still duplicate all directories that are listed after
+``src`` in the path. If we wanted to copy more directories, we&rsquo;d just
+specify a different base:
 
-<pre class="brush: jscript; title: ; notranslate" title="">...
-    gulp.task('copy', ['clean'], function () {
-        return gulp.src(['some/other/folders/src/public/**/*', 'some/other/folders/src/vendor/**/*'], {
-            base: 'other'
-        }).pipe(gulp.dest('build'));
-    });
-</pre>
+~~~js
+...
+gulp.task('copy', ['clean'], function () {
+    return gulp.src([
+      'some/other/folders/src/public/**/*',
+      'some/other/folders/src/vendor/**/*'
+    ], {
+        base: 'other'
+    }).pipe(gulp.dest('build'));
+});
+~~~
 
 The output structure would look something like this:
-  
-`</p>
-<pre>
+
+~~~
 build
   ->folders
     ->public
@@ -92,8 +102,7 @@ build
       ->pubFile2
     ->vendor
       ->vendorFile1
-      ->vendorFile2  
-</pre>
-<p>`
+      ->vendorFile2
+~~~
 
 Hopefully this clears things up!
