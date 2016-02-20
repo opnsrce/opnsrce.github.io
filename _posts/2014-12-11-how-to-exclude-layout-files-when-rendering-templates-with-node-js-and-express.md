@@ -22,7 +22,7 @@ case anyone else ran into this issue. Long story short, I needed to return an
 HTML fragment for a particular ajax request from the app (in this case, search
 results) but the response always included the layout file I configured for the
 app:
-
+<!--more-->
 ~~~js
 hbsEngine = expressHbs.create({
   extname: 'hbs',
