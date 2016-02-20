@@ -1,10 +1,8 @@
 ---
-id: 22
 title: 'Format Time Twitter-Style'
 date: 2011-01-23T22:28:21+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=22
 permalink: /format-time-twitter-style/
 categories:
   - Code Snippets
