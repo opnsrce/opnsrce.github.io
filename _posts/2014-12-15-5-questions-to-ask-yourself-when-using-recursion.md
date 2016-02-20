@@ -24,7 +24,7 @@ decided to program in. In order to help developers who find themselves
 struggling with the concept (myself included), I&rsquo;ve broken down the
 concept into five simple questions you&rsquo;ll need to answer in order to
 write solid recursive functions (inspired by the folks over at [CodeCademy][1]).
-
+<!--more-->
 
 Each of these questions breaks down a simple JavaScript function designed to
 find the factoral of a given number:
