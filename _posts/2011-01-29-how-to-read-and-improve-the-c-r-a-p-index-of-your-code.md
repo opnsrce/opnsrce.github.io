@@ -24,6 +24,8 @@ had never seen before: the C.R.A.P index. After doing a little research and
 [asking the right questions][1], I was able to get a firm grasp on what the
 C.R.A.P index is and what it means for my code.
 
+<!--more-->
+
 # What is the C.R.A.P Index?
 
 According to [Alberto Savoia][2]:

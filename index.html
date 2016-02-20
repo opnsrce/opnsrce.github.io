@@ -7,20 +7,23 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
     <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+        {{post.excerpt.length}}
+      </span>
+
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
       </h2>
       <p class="post-excerpt">
-        {{ post.content | strip_html | truncatewords: 20 }}
+        {{ post.excerpt }}
+      </p>
         <a
           class = "post-read-more-link"
           href="{{ post.url | prepend: site.baseurl }}">
           Read More
         </a>
-      </p>
     </li>
     {% endfor %}
   </ul>

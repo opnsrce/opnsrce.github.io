@@ -30,6 +30,8 @@ popular images on [Graphic River][3][*][4]. I figured it would be fun to
 take the time to walk you through some of the code I used as well as share
 my thoughts on my first major Ruby experience.
 
+<!--more-->
+
 ## Assumptions
 
 I&rsquo;m going to assume that you already have a development environment set

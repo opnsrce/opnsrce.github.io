@@ -18,6 +18,8 @@ tags:
 passed in variables. For example, assuming you're working with a twelve column
 grid layout, your mixin for generating a column might look something like this:
 
+<!--more-->
+
 ~~~sass
 @mixin column($num-columns) {
   width: $num-columns / 12;

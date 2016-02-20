@@ -1,24 +1,25 @@
 ---
-id: 30
-title: 'Finishing what you started: Completing (and Releasing) Those Weekend Projects'
+title: 'Finishing what you started: Completing (and Releasing)
+		Those Weekend Projects'
 date: 2011-02-05T09:21:00+00:00
 author: Levi Hackwith
-excerpt: Weekend projects are a common occurrence amongst corporate programmers. Unfortunately, many of these projects remain unfinished often weeks or months after we started them. So what, exactly, are the underlying causes of this code procrastination?
+excerpt: 'Weekend projects are a common occurrence amongst corporate
+	programmers. Unfortunately, many of these projects remain unfinished often
+	weeks or months after we started them. So what, exactly, are the
+	underlying causes of this code procrastination?'
 layout: post
-guid: http://www.levihackwith.com/?p=30
 permalink: /finishing-what-you-started-completing-and-releasing-those-weekend-projects/
-icy_video_embed_code:
-  - 
 categories:
   - Programming / Web Development
 ---
+
 Weekend projects are a common occurrence amongst corporate programmers. These (often) nocturnal endeavors give us a chance to learn new languages as well as develop thingFinishing what you started: Completing (and Releasing) Those Weekend Projectss that aren&#8217;t otherwise &#8220;work approved.&#8221; Unfortunately, despite a copious amount of caffeine and plenty of good intentions, many of these projects remain unfinished often weeks or months after we started them. So what, exactly, are the underlying causes of this code procrastination?
+
+<!--more-->
 
 ## Problem: We Are Our Own Worst Client
 
 We&#8217;re demanding, stubborn, and believe we&#8217;re always right. We change our mind every 10 minutes, altering the code and its purpose with every new idea that floats into our head. Developing for an ever-changing list of requirements, our application becomes a jumbled mess of half-baked ideas and half-finished features. We are our own worst client.
-
-<!--more-->
 
 One of the biggest hurdles when it comes to finishing a project is often ourselves. We get started on one idea and then another pops into our head, causing us to abandon one project for another. When the dust finally settles, we&#8217;re left with several great, unfinished programs and not a lot to show for all our efforts.
 

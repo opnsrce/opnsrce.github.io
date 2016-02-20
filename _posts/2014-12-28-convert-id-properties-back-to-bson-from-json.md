@@ -29,6 +29,7 @@ advice I found related to modifying `toJSON` and `parse` methods to convert
 ID fields back to their original values when posting. This really wasn&rsquo;t
 an option for me since I had a number of nested documents in my data
 structure that also had ``$oid`` fields that needed to be converted.
+<!--more-->
 For example:
 
 ~~~js
