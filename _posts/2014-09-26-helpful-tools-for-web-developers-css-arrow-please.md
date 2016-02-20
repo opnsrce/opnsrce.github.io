@@ -7,11 +7,18 @@ layout: post
 guid: http://www.levihackwith.com/?p=354
 permalink: /helpful-tools-for-web-developers-css-arrow-please/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools
 tags:
   - CSS
 ---
-Recently, I&#8217;ve discovered that making css arrows (see image above) is a huge pain in the ass. Luckily, there&#8217;s a tool to make it easy for you: <a href = "http://cssarrowplease.com/">CSS Arrow, Please</a> (I added the comma because it was driving me nuts). I highly recommend you check it out if you need an arrow for UI elements such as speech bubbles, tooltips, or popovers.
+
+[1]: http://cssarrowplease.com/
+
+Recently, I&rsquo;ve discovered that making css arrows is a huge pain in the
+ass. Luckily, there&rsquo;s a tool to make it easy for you:
+[CSS Arrow, Please][1] (I added the comma because it was driving me nuts). I
+highly recommend you check it out if you need an arrow for UI elements such as
+speech bubbles, tooltips, or popovers.
