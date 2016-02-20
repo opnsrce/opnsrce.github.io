@@ -1,10 +1,8 @@
 ---
-id: 13
 title: Using RMagick and The Envato API to Make Dynamic Images
 date: 2011-01-21T22:36:05+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=13
 permalink: /using-rmagick-and-the-envato-api-to-make-dynamic-images/
 categories:
   - Programming / Web Development
@@ -32,7 +30,7 @@ my thoughts on my first major Ruby experience.
 
 <!--more-->
 
-## Assumptions
+# Assumptions
 
 I&rsquo;m going to assume that you already have a development environment set
 up that allows you to run Ruby from the command-line and have successfully
@@ -47,13 +45,13 @@ blog post.
 
 <!--more-->
 
-## The Core Methods
+# The Core Methods
 
 For the sake of saving time and keeping code reusable, I wrapped several of
 the Envato API calls into a custom API class that would allow me to easily
 retrieve data from the API in a given format (in this case, XML).
 
-### The get_data() method
+# The get_data() method
 
 ~~~ruby
 # Retrieves the response from a URL in the requested format
@@ -108,7 +106,7 @@ later) and sends the URL it returns, along with the requested format (e.g.
 &quo;XML&rsquo;) to ``get_data()`` which will then retrieve all the latest blog
 posts for the passed in site (e.g., &quo;graphicriver&rsquo;).
 
-### The generate_url() Method
+# The generate_url() Method
 
 ~~~ruby
 # Generates the URL used by get_data
@@ -134,7 +132,7 @@ So, For example, to pull recent blog post data for the GraphicRiver site using
 version 2 of the API in XML format (whew!), you would use this URL:
 [http://marketplace.envato.com/api/v2/blog-posts:graphicriver.xml][6]
 
-### The get\_popular\_items() Method
+# The get\_popular\_items() Method
 
 ~~~ruby
 # Retrieves the 'popular' set for the given site in the given format
@@ -149,7 +147,7 @@ to get the thumbnails used in our generated image. It&rsquo;s virtually
 identical to the ``get_blog_posts()`` method, so I won&rsquo;t be going into
 detail regarding how it works.
 
-## The AdGenerator Class
+# The AdGenerator Class
 
 This is the class we&rsquo;ll use to generate our final image:
 
@@ -232,13 +230,13 @@ end
 This may seem a little overwhelming, so let me break down what&rsquo;s going on
 in this class
 
-## Do We Have Enough Images?
+# Do We Have Enough Images?
 
 Staying true to its name, the enough_images? method returns a boolean value
 specifying whether or not we have enough thumbnails in the data returned from
 the API to create the size of image we want.
 
-## Creating the Final Image
+# Creating the Final Image
 
 ~~~ruby
 def generate_ad(rows, cols, save_path = nil)
@@ -296,7 +294,7 @@ see if there&rsquo;s a save path specified. If there is a path, we save the
 complete image to the hard drive at the path specified. If no path is given,
 we simply return the ``imageList`` object.
 
-## Using the AdGenerator
+# Using the AdGenerator
 
 ~~~ruby
 require 'envato_api';
@@ -315,7 +313,7 @@ ad = ad_generator.generate_ad(5, 5);
 ad.write('ad.jpg');</pre>
 ~~~
 
-## Final Thoughts
+# Final Thoughts
 
 Well, I hope you&rsquo;ve found this little jaunt through RMagick, Ruby and the
 Envato API somewhat helpful. I highly encourage you to explore the links
@@ -324,7 +322,7 @@ the Envato API. For example, you could use the ``new-files-from-user``
 set to pull back all of your latest marketplace files and display them as a
 dynamic banner ad on your website.
 
-## Full Source Code
+# Full Source Code
 
 If you&rsquo;re interested in viewing th e code used in this post, you can do
 an svn checkout via
