@@ -1,6 +1,7 @@
 url: http://www.levihackwith.com
 name: Levihackwith.com
 title: LeviHackwith.com
+post_images_folder: /images/posts
 description: Ship Now. Iterate Later.
 highlighter: 'rouge'
 kramdown:
