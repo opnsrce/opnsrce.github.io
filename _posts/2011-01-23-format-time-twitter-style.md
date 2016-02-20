@@ -6,8 +6,6 @@ author: Levi Hackwith
 layout: post
 guid: http://www.levihackwith.com/?p=22
 permalink: /format-time-twitter-style/
-icy_video_embed_code:
-  -
 categories:
   - Code Snippets
 tags:
