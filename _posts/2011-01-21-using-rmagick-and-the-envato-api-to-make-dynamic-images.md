@@ -124,9 +124,9 @@ be retrieved from the API using a specially formatted URL:
 
 > http://marketplace.envato.com/api/[api_version]/[set].[format]
 
-  * [api_version]: The version of the API to use (e.g., &quo;v2&rsquo;)
-  * [set]: The set you want to retrieve (e.g., &quo;blog-posts&rsquo;)
-  * [format]: The format you want the data to be in (e.g., &quo;xml&rsquo;)
+    * [api_version]: The version of the API to use (e.g., &quo;v2&rsquo;)
+    * [set]: The set you want to retrieve (e.g., &quo;blog-posts&rsquo;)
+    * [format]: The format you want the data to be in (e.g., &quo;xml&rsquo;)
 
 So, For example, to pull recent blog post data for the GraphicRiver site using
 version 2 of the API in XML format (whew!), you would use this URL:
@@ -278,16 +278,15 @@ single long image and add that image to our final product.
 
 ~~~ruby
 ...
-            if save_path.nil? then
-                # No save path, so just return the final composite image
-                return ad.append(true);
-            else
-                # Compile the image and save it to disk
-                    ad.append(true).write(save_path);
-            end
-        end
-    end
+if save_path.nil? then
+    # No save path, so just return the final composite image
+    return ad.append(true);
+else
+    # Compile the image and save it to disk
+    ad.append(true).write(save_path);
 end
+...
+# Close loops
 ~~~
 
 Once we&rsquo;ve added all the rows of images to the final image, we check to
