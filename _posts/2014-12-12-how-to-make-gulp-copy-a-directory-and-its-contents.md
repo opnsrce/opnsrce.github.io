@@ -25,7 +25,7 @@ the build process and I kept struggling with how to copy multiple folders from
 the ``src`` directory to the ``build`` directory in such a way that the
 directory&rsquo;s contents _and_ its original folder structure are preserved.
 Basically, I was trying to achieve this:
-
+<!--more-->
 ~~~
 src // Copy everything under src
   ->public
