@@ -24,7 +24,7 @@ tags:
 I made a simple, static dropdown menu widget that&rsquo;s meant to act as a
 template for dropdowns you need to create.
 
-See the Pen <a href=''>[Lkgzv][1] by Levi Hackwith (@opnsrce][2]) on
+See the Pen <a href=''>[Lkgzv][1] by Levi Hackwith [@opnsrce][2]) on
 [CodePen][3].
 
 Currently, it&rsquo;s not animated but feel free to fork it.
