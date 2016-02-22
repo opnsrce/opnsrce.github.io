@@ -7,13 +7,13 @@ layout: post
 guid: http://www.levihackwith.com/?p=312
 permalink: /code-snippet-create-a-simple-winner-badge-using-only-css/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109542
 categories:
   - Uncategorized
 ---
-Today I&#8217;m just going to share with you something I made over the weekend: a really simple &#8220;winner&#8221; badge using only CSS3. 
+Today I&#8217;m just going to share with you something I made over the weekend: a really simple &#8220;winner&#8221; badge using only CSS3.
 
 First, the Markup:
 
@@ -23,6 +23,7 @@ First, the Markup:
 &lt;/div&gt;
 ...
 </pre>
+<!--more-->
 
 And the CSS:
 
@@ -86,6 +87,6 @@ And the CSS:
 }
 </pre>
 
-The end result is what you saw at the beginning of the post. 
+The end result is what you saw at the beginning of the post.
 
 A special thanks to [Alan Johnson](http://commondream.net/post/8848553728/pure-css-badges) for coming up with the original 12-point burst CSS I modified to make this happen.
