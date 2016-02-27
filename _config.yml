@@ -5,7 +5,13 @@ post_images_folder: /images/posts
 description: Ship Now. Iterate Later.
 highlighter: 'rouge'
 kramdown:
-  input: GFM
-  hard_wrap: false
+    input: GFM
+    hard_wrap: false
+
+gems:
+    - jekyll-gist
 
 excerpt_separator: <!--more-->
+sass:
+    style: compressed
+pagination: 20

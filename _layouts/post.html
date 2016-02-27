@@ -1,40 +1,21 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-            <time
-                datetime="{{ page.date | date_to_xmlschema }}"
-                itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}
+<article class="post-page">
+    <header class="post-page__header">
+        <h1 class="post-page__title">{{ page.title }}</h1>
+        <p class="post-page__metadata">
+            <time class="posted-date" datetime="{{ page.date }}">
+                {{ page.date | date: "%b %-d, %Y" }}
             </time>
-            {% if page.author %}
-            <span
-                itemprop="author" itemscope
-                itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ page.author }}</span>
-            </span>
-            {% endif %}
+            <span class="author">{{ page.author }}</span>
         </p>
     </header>
 
-    <article class="post-content" itemprop="articleBody">
+    <article class="post-page__content">
         {{ content }}
     </article>
 
-    <footer>
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {  // DON'T EDIT BELOW THIS LINE
-                var d = document;
-                var s = d.createElement('script');
-
-                s.src = '//levihackwith.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
+    <footer class="post-page__footer">
     </footer>
 </article>

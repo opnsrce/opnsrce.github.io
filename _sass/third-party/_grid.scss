@@ -1,0 +1,126 @@
+//
+// These are the default settings for the grid. To override, simply redeclare
+// This variable after you import _grid.scss.
+//
+$grid-config: (
+    // The max-width of the grid
+    max-grid-width: 960px,
+    // How wide the column gutters should be
+    gutter-width: 12px,
+    // The number of columns in the grid
+    num-columns: 12
+);
+
+@mixin grid() {
+    $max-grid-width: map-get($grid-config, 'max-grid-width');
+
+    display: block;
+    min-height: 100%;
+    margin: auto;
+    max-width: $max-grid-width;
+    position: relative;
+    box-sizing: border-box;
+    &:before, &:after {
+        box-sizing: border-box;
+    }
+    &:after {
+        content: '';
+        display: table;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+//
+// @param {integer} $width How wide the column should be
+// @param {map} $options The config options for the column. See $default-options
+// for a list of possible values.
+//
+@mixin column($width, $options:()) {
+    ////////////////////////////////////////////////////////////////////////////
+    $default-options: (
+        // What sides to remove padding from: e.g., collapse: top left
+        collapse: none,
+        // How many columns-widths from the left a column should start
+        push: 0,
+        // How many column-widths from the right a column should start
+        pull: 0,
+        //
+        // What direction to force a column to be in. Possible value are: right,
+        // center
+        //
+        force: none
+    );
+
+    $options: map-merge($default-options, $options);
+
+    $collapse: map-get($options, 'collapse');
+    $collapsible-sides: top bottom left;
+    $force: map-get($options, 'force');
+    $gutter-width: map-get($grid-config, 'gutter-width');
+    $num-columns: map-get($grid-config, 'num-columns');
+    $pull: map-get($options, 'pull');
+    $push: map-get($options, 'push');
+    $push: map-get($options, 'push');
+    ////////////////////////////////////////////////////////////////////////////
+
+    $calculated-width: ($width / $num-columns) * 100%;
+    @if($force == right) {
+        float: right;
+    } @else if($force == center) {
+
+        //
+        // In order to center a column among floated columns, you need to make
+        // your floated elements (left, right) come before non-floated elements
+        // (center) in the markup. So you're styling would go like this:
+        //    column 1: force: none;
+        //    column 2: force: right;
+        //    column 3: force: center
+        //
+        // Instead of this:
+        //    column 1: force: none;
+        //    column 2: force: center;
+        //    column 3: force: right
+        //
+
+        float: none;
+        margin: 0 auto;
+    } @else {
+        float: left
+    }
+    min-height: 1px;
+    position: relative;
+    width: $calculated-width;
+    box-sizing: border-box;
+    &:before, &:after {
+        box-sizing: border-box;
+    }
+
+    //
+    // Calculate padding based on what's being collapsed
+    //
+    @if($collapse == 'all') {
+        padding: 0;
+    } @else if($collapse == 'none') {
+        padding: $gutter-width 0 $gutter-width $gutter-width;
+    } @else {
+        @each $side in $collapsible-sides {
+            @if(index($collapse, $side) != null) {
+                padding-#{$side}: 0;
+            } @else {
+                padding-#{$side}: $gutter-width;
+            }
+        }
+    }
+
+    //
+    // Calculate left / right based on push / pull
+    //
+    @if($push > 0) {
+        left: ($push / $num-columns) * 100%;
+    }
+
+    @if($pull > 0) {
+        right: ($push / $num-columns) * 100%;
+    }
+}

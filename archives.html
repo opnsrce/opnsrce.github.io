@@ -1,11 +1,12 @@
 ---
+title: Archives
 layout: default
 ---
 
 <div class="home-page">
-    <h1 class="home-page__title">Posts</h1>
+    <h1 class="home-page__title">{{ page.title }}</h1>
     <ol class="home-page__post-list">
-        {% for post in site.posts limit: site.pagination %}
+        {% for post in site.posts offset: site.pagination + 1 %}
         <li class="post">
             <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h2 class="title">
