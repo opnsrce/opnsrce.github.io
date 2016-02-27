@@ -59,7 +59,7 @@ Here we've limited the number of posts being displayed to the value of the
 ``pagination`` property in our ``_config.yml`` file. You don't have to use this
 variable if you don't want to. I just chose it because it made the most sense.
 
-## Step 2: Create Archives.html
+# Step 2: Create Archives.html
 
 Now that we've limited what we show on the homepage, we can go ahead and create
 the archives page to display our remaining posts:
