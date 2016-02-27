@@ -1,13 +1,10 @@
 ---
-id: 57
 title: Adding Shift+Click Multi-Select Capability to the SuperBoxSelect Plugin
 date: 2011-03-19T17:56:38+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=57
 permalink: /adding-shiftclick-multi-select-capability-to-the-superboxselect-plugin/
-icy_video_embed_code:
-  -
+code: true
 categories:
   - Code Snippets
   - Programming / Web Development

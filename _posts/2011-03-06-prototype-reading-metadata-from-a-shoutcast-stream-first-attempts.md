@@ -3,6 +3,7 @@ title: 'Prototype: Reading Metadata from a Shoutcast Stream (First Attempts)'
 date: 2011-03-06T22:12:34+00:00
 author: Levi Hackwith
 layout: post
+code: true
 permalink: /prototype-reading-metadata-from-a-shoutcast-stream-first-attempts/
 categories:
   - Programming / Web Development
@@ -172,7 +173,8 @@ public function startStreaming($streamUrl) {
     $streamUrlData = parse_url($streamUrl);
     $headers[] = "GET / HTTP/1.1";
     $headers[] = 'Content-type: audio/mpeg';
-    $headers[] = 'Accept:application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5';
+    $headers[] = 'Accept:application/xml,application/xhtml+xml,text/html' +
+        ';q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5';
     $headers[] = 'User-Agent: WinampMPEG/2.9';
     $headers[] = 'Accept-Charset:ISO-8859-1,utf-8;q=0.7,*;q=0.3';
     $headers[] = 'Accept-Encoding:gzip,deflate,sdch';

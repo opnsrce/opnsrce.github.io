@@ -3,6 +3,7 @@ title: Simplifying the Google Charts API with a Wrapper Class (0.1 Alpha Release
 date: 2011-03-13T23:03:07+00:00
 author: Levi Hackwith
 layout: post
+code: true
 permalink: /simplifying-the-google-charts-api-with-a-wrapper-class-0-1-alpha-release/
 categories:
   - Programming / Web Development
@@ -38,7 +39,7 @@ chart type: in a line chart, a series is a single line; in a pie chart, each
 entry is a slice, and all slices together are a series. In a bar chart, a
 series is all the bars from the same set of data; different series are either
 grouped side by side or stacked atop each other, depending on the bar chart
-type&#8230;
+type
 
 Pretty straight forward. What&rsquo;s not so straight forward is all the minute
 differences between series of a given chart type. A series for a  chart (e.g.,

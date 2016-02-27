@@ -1,11 +1,13 @@
 ---
-id: 126
 title: Order Your Methods to Add Clarity to Your Code
 date: 2012-01-30T00:00:39+00:00
 author: Levi Hackwith
-excerpt: In general we want function call dependencies to point in the downward direction. That is, a function that is called should be below a function that does the calling.2This creates a nice flow down the source code module from high level to low level.
+excerpt: 'In general we want function call dependencies to point in the
+downward direction. That is, a function that is called should be below a
+function that does the calling.2This creates a nice flow down the source code
+module from high level to low level.'
+code: true
 layout: post
-guid: http://www.levihackwith.com/?p=126
 permalink: /order-your-methods-to-add-clarity-to-your-code/
 categories:
   - Programming / Web Development
@@ -15,27 +17,37 @@ tags:
   - PHP
   - Robert Martin
 ---
-Recently I&#8217;ve been reading _<a title="View Clean Code (KIndle Edition) On Amazon.com " href="http://www.amazon.com/Clean-Code-Handbook-Craftsmanship-ebook/dp/B001GSTOAM/ref=tmm_kin_title_0?ie=UTF8&m=AG56TWVU5XWC2" target="_blank">Clean Code</a>_ by Robert C Martin and come across this wonderful piece of programming advice from Chapter 5:
+[1]: http://www.amazon.com/Clean-Code-Handbook-Craftsmanship-ebook/dp/B001GSTOAM/ref=tmm_kin_title_0?ie=UTF8&m=AG56TWVU5XWC2
 
-<blockquote cite="Martin, Robert C. (2011-11-11). Robert C. Martin Clean Code Collection, The (Kindle Locations 2580-2585). Pearson Education (USA). Kindle Edition.">
-  <p>
-    In general we want function call dependencies to point in the downward direction. That is, a function that is called should be below a function that does the calling.<sup>2</sup>This creates a nice flow down the source code module from high level to low level.
-  </p>
-  
-  <p>
-    As in newspaper articles, we expect the most important concepts to come first, and we expect them to be expressed with the least amount of polluting detail. We expect the low-level details to come last. This allows us to skim source files, getting the gist from the first few functions, without having to immerse ourselves in the details.
-  </p>
-</blockquote>
+Recently I&rsquo;ve been reading _[Clean Code][1]_ by Robert C Martin and come
+across this wonderful piece of programming advice from Chapter 5:
+
+> In general we want function call dependencies to point in the downward
+> direction. That is, a function that is called should be below a function that
+> does the calling.This creates a nice flow down the source code module from
+> high level to low level.
+>
+> As in newspaper articles, we expect the most important concepts to come
+> first, and we expect them to be expressed with the least amount of polluting
+> detail. We expect the low-level details to come last. This allows us to skim
+> source files, getting the gist from the first few functions, without having
+> to immerse ourselves in the details.
 
 <!--more-->
 
 
-  
-When I first read this, I was just stunned. During my career I&#8217;ve encountered (and written) classes that were very difficult to read and follow despite their methods being well-written and documented. It wasn&#8217;t until I&#8217;d discovered this piece of coding advice, that  I understood why.
 
-To illustrate the point Mr. Martin is trying to make, let&#8217;s take a look at an example class I put together:
+When I first read this, I was just stunned. During my career I&rsquo;ve
+encountered (and written) classes that were very difficult to read and follow
+despite their methods being well-written and documented. It wasn&rsquo;t until
+ I&rsquo;d discovered this piece of coding advice, that I understood why.
 
-<pre class="brush: php; title: ; notranslate" title="">&lt;?
+To illustrate the point Mr. Martin is trying to make, let&rsquo;s take a look
+at an example class I put together:
+
+~~~php
+
+<?php
 class SalesReport {
 
     private $startDate = '';
@@ -44,7 +56,7 @@ class SalesReport {
     private $salesTeamMembers = array();
 
     public function setEndDate($date) {
-        $this-&gt;endDate = $date;
+        $this->endDate = $date;
     }
 
     public function __construct() {
@@ -52,14 +64,15 @@ class SalesReport {
     }
 
     public function setStartDate($date) {
-        $this-&gt;startDate = $date;
+        $this->startDate = $date;
     }
 
     public function setSalesTeamMembers($teamMemberIds) {
         if(is_array($teamMemberIds)) {
-            $this-&gt;salesTeamMembers = $teamMemberIds;
+            $this->salesTeamMembers = $teamMemberIds;
         } else {
-            throw new Exception('SalesReport::setSalesTeamMembers only accepts an array of team member ids');
+            throw new Exception('SalesReport::setSalesTeamMembers only ' .
+                'accepts an array of team member ids');
         }
     }
 
@@ -68,9 +81,9 @@ class SalesReport {
     }
 
     public function generate() {
-        $whereClause = $this-&gt;generateReportQueryWhereClause();
-        $orderByClause = $this-&gt;generateReportQueryOrderByClause();
-        $limitClause = $this-&gt;generateReportQueryLimitClause();
+        $whereClause = $this->generateReportQueryWhereClause();
+        $orderByClause = $this->generateReportQueryOrderByClause();
+        $limitClause = $this->generateReportQueryLimitClause();
         $query = "
             SELECT
                 /* Field Listing */
@@ -98,19 +111,25 @@ class SalesReport {
 
     public function setSalesQuarter($salesQuarter) {
         if(is_int($salesQuarter)) {
-            $this-&gt;salesQuarter = $salesQuarter;
+            $this->salesQuarter = $salesQuarter;
         } else {
             throw new Exception('Sales Quarter must be an integer');
         }
     }
 
 }
-?&gt;
-</pre>
+?>
+~~~
 
-Take a glance at the above class. Do you notice how your eyes have to keep jumping around the class in order to follow what&#8217;s going on? By having the methods randomly scattered throughout the code, you really have to focus in on (and possibly get lost in) the details of the code.  Now let&#8217;s rearrange the methods of the class to more closely match the order in which things are called and referenced:
+Take a glance at the above class. Do you notice how your eyes have to keep
+jumping around the class in order to follow what&rsquo;s going on? By having
+the methods randomly scattered throughout the code, you really have to focus
+in on (and possibly get lost in) the details of the code.  Now let&rsquo;s
+rearrange the methods of the class to more closely match the order in which
+things are called and referenced:
 
-<pre class="brush: php; title: ; notranslate" title="">&lt;?
+~~~php
+<?php
 class SalesReport {
 
     private $startDate = '';
@@ -121,18 +140,18 @@ class SalesReport {
     public function __construct() {
 
     }
-	
+
     public function setEndDate($date) {
-        $this-&gt;endDate = $date;
+        $this->endDate = $date;
     }
-	
+
     public function setStartDate($date) {
-        $this-&gt;startDate = $date;
+        $this->startDate = $date;
     }
-	
+
     public function setSalesQuarter($salesQuarter) {
         if(is_int($salesQuarter)) {
-            $this-&gt;salesQuarter = $salesQuarter;
+            $this->salesQuarter = $salesQuarter;
         } else {
             throw new Exception('Sales Quarter must be an integer');
         }
@@ -140,16 +159,17 @@ class SalesReport {
 
     public function setSalesTeamMembers($teamMemberIds) {
         if(is_array($teamMemberIds)) {
-            $this-&gt;salesTeamMembers = $teamMemberIds;
+            $this->salesTeamMembers = $teamMemberIds;
         } else {
-            throw new Exception('SalesReport::setSalesTeamMembers only accepts an array of team member ids');
+            throw new Exception('SalesReport::setSalesTeamMembers only ' .
+                'accepts an array of team member ids');
         }
     }
 
     public function generate() {
-        $whereClause = $this-&gt;generateReportQueryWhereClause();
-        $orderByClause = $this-&gt;generateReportQueryOrderByClause();
-        $limitClause = $this-&gt;generateReportQueryLimitClause();
+        $whereClause = $this->generateReportQueryWhereClause();
+        $orderByClause = $this->generateReportQueryOrderByClause();
+        $limitClause = $this->generateReportQueryLimitClause();
         $query = "
             SELECT
                 /* Field Listing */
@@ -170,16 +190,20 @@ class SalesReport {
     public function generateReportQueryOrderByClause() {
         // Generate ORDER BY clause
     }
-	
+
     public function generateReportQueryLimitClause() {
         // Generate Limit clause
     }
-	
+
     public function load() {
         // Load report results from temporary table
     }
 }
-?&gt;
-</pre>
+?>
+~~~
 
-See the difference? Notice how the code naturally flows from one method to the next, allowing you to quickly ascertain what the class is doing and when it&#8217;s doing it. By ordering the methods so the calling method (caller) is declared before the method being called (callee), you drastically increase your code&#8217;s readability.
+See the difference? Notice how the code naturally flows from one method to the
+next, allowing you to quickly ascertain what the class is doing and when
+it&rsquo;s doing it. By ordering the methods so the calling method (caller) is
+declared before the method being called (callee), you drastically increase
+your code&rsquo;s readability.

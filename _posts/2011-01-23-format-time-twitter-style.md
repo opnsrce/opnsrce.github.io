@@ -3,6 +3,7 @@ title: 'Format Time Twitter-Style'
 date: 2011-01-23T22:28:21+00:00
 author: Levi Hackwith
 layout: post
+code: true
 permalink: /format-time-twitter-style/
 categories:
   - Code Snippets
@@ -16,6 +17,7 @@ behavior in PHP, here&rsquo;s a function you can use:
 <!--more-->
 
 ~~~php
+<?php
 function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
     // How many seconds have elapsed
     $seconds = round((time() - $timestamp));
@@ -79,4 +81,5 @@ function calc_time_diff($timestamp, $unit = NULL, $show_unit = TRUE) {
             break;
     }
 }
+?>
 ~~~
