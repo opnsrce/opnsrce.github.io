@@ -1,13 +1,10 @@
 ---
-id: 241
 title: CSS Transitions Cause jQuery FadeIn() to Not Work
 date: 2013-02-25T00:00:04+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=241
-permalink: /css-transitions-cause-jquery-fadein-to-not-work/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586110014
 categories:
@@ -30,7 +27,7 @@ This is the CSS I&#8217;m using.
     -webkit-transition: all 1s ease-in-out; /* Transition properties (for each vendor) */
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;    
+    transition: all 1s ease-in-out;
 }
 image:hover {
     opacity: .5; /* When you mouse over the image, reduce opacity by 50% */
@@ -41,7 +38,7 @@ And here&#8217;s the JavaScript:
 
 <pre class="brush: jscript; title: ; notranslate" title="">$(document).ready(function() {
     var images = $('img');
-    
+
     images.hide();
 
     images.each(function(i) {
@@ -68,7 +65,7 @@ The JavaScript
 
 <pre class="brush: jscript; title: ; notranslate" title="">$(document).ready(function() {
     var images = $('img');
-    
+
     images.hide();
 
     images.each(function(i) {

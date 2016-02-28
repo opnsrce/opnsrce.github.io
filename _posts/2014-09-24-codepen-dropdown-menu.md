@@ -1,11 +1,8 @@
 ---
-id: 352
 title: 'CodePen: Dropdown Menu'
 date: 2014-09-24T00:00:26+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=352
-permalink: /codepen-dropdown-menu/
 icy_video_embed_code:
   -
 categories:

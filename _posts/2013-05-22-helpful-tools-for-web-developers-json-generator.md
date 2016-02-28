@@ -1,13 +1,10 @@
 ---
-id: 291
 title: 'Helpful Tools For Web Developers: JSON Generator'
 date: 2013-05-22T00:00:23+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=291
-permalink: /helpful-tools-for-web-developers-json-generator/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

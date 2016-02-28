@@ -1,11 +1,8 @@
 ---
-id: 358
 title: 'Helpful Tools For Web Developers: CodeWars.com'
 date: 2014-11-24T00:00:23+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=358
-permalink: /helpful-tools-for-web-developers-codewars-com/
 categories:
   - Programming / Web Development
   - Tools

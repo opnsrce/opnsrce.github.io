@@ -1,11 +1,8 @@
 ---
-id: 150
 title: In Defense of Casual Coding
 date: 2012-09-09T00:44:46+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=150
-permalink: /in-defense-of-casual-coding/
 categories:
   - Culture
   - Programming / Web Development
@@ -13,7 +10,7 @@ categories:
 Recently, the Stack Exchange blog posted a list of the 20 highest voted answers to the question &#8220;What&#8217;s your most controversial programming opinion?&#8221; While I agreed with some of the answers and disagreed with others, one answer in particular stuck out to me:
 
 > Programmers who don’t code in their spare time for fun will never become as good as those that do.
-  
+
 > I think even the smartest and most talented people will never become truly good programmers unless they treat it as more than a job. Meaning that they do little projects on the side, or just mess with lots of different languages and ideas in their spare time.
 
 <!--more-->

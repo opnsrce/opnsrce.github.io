@@ -1,13 +1,10 @@
 ---
-id: 264
 title: 'Helpful Tools for Web Developers: Ruby Fiddle'
 date: 2013-04-03T00:00:00+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=264
-permalink: /helpful-tools-for-web-developers-ruby-fiddle/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

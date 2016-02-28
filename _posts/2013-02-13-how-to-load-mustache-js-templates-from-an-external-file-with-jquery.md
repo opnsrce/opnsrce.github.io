@@ -1,13 +1,10 @@
 ---
-id: 225
 title: How to Load Mustache.js Templates From an External File with jQuery
 date: 2013-02-13T00:00:45+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=225
-permalink: /how-to-load-mustache-js-templates-from-an-external-file-with-jquery/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586112447
 categories:

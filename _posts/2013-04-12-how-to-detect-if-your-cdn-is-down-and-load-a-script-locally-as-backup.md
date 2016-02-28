@@ -1,13 +1,10 @@
 ---
-id: 274
 title: 'How to &#8220;Detect&#8221; If Your CDN is Down And Load a Script Locally As Backup'
 date: 2013-04-12T00:00:33+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=274
-permalink: /how-to-detect-if-your-cdn-is-down-and-load-a-script-locally-as-backup/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development

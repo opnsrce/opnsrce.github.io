@@ -1,13 +1,10 @@
 ---
-id: 190
 title: 'Helpful Tools For Web Developers: Duri.me &#8211; Base64 Encode Your Images'
 date: 2013-01-23T00:00:27+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=190
-permalink: /helpful-tools-for-web-developers-duri-me-base64-encode-your-images/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

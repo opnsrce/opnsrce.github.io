@@ -1,13 +1,10 @@
 ---
-id: 261
 title: Learning Ruby Through Ruby Koans Online
 date: 2013-04-01T00:00:38+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=261
-permalink: /learning-ruby-through-ruby-koans-online/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:

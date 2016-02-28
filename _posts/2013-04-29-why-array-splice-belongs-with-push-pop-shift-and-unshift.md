@@ -1,13 +1,10 @@
 ---
-id: 277
 title: Why Array.Splice Belongs With Push, Pop, Shift, and Unshift
 date: 2013-04-29T00:00:37+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=277
-permalink: /why-array-splice-belongs-with-push-pop-shift-and-unshift/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:

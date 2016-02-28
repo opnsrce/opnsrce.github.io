@@ -3,7 +3,6 @@ title: 'ExtJS 4: Parsing Filters From the FilterFeature Using PHP'
 date: 2011-10-10T03:07:24+00:00
 author: Levi Hackwith
 layout: post
-permalink: /extjs-4-parsing-filters-from-the-filterfeature-using-php/
 code: true
 categories:
   - Code Snippets

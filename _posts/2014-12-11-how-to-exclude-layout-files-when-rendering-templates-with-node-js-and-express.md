@@ -1,11 +1,8 @@
 ---
-id: 365
 title: How to Exclude Layout Files When Rendering Templates With Node.js and Express
 date: 2014-12-11T21:42:57+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=365
-permalink: /how-to-exclude-layout-files-when-rendering-templates-with-node-js-and-express/
 icy_video_embed_code:
   -
 categories:

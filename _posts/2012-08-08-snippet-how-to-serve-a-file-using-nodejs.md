@@ -1,11 +1,8 @@
 ---
-id: 143
 title: 'Snippet: How to serve a file using NodeJs'
 date: 2012-08-08T00:00:13+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=143
-permalink: /snippet-how-to-serve-a-file-using-nodejs/
 categories:
   - Code Snippets
   - Programming / Web Development

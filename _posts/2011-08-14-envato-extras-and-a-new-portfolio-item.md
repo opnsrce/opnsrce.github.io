@@ -3,7 +3,6 @@ title: Envato Extras and a New Portfolio Item
 date: 2011-08-14T14:29:58+00:00
 author: Levi Hackwith
 layout: post
-permalink: /envato-extras-and-a-new-portfolio-item/
 categories:
   - Programming / Web Development
 tags:

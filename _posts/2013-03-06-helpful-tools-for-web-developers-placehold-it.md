@@ -1,13 +1,10 @@
 ---
-id: 248
 title: 'Helpful Tools For Web Developers: Placehold.it'
 date: 2013-03-06T00:00:36+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=248
-permalink: /helpful-tools-for-web-developers-placehold-it/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Uncategorized
 tags:

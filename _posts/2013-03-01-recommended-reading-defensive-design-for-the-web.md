@@ -1,13 +1,10 @@
 ---
-id: 243
 title: 'Recommended Reading: Defensive Design for the Web'
 date: 2013-03-01T00:00:59+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=243
-permalink: /recommended-reading-defensive-design-for-the-web/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Books
   - Programming / Web Development

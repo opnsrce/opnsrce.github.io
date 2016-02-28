@@ -1,13 +1,10 @@
 ---
-id: 320
 title: JsLint Unexpected Continue Error Explained
 date: 2013-11-04T12:00:50+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=320
-permalink: /jslint-unexpected-continue-error-explained/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109439
 categories:
@@ -28,7 +25,7 @@ Recently, I encountered this message when checking some code I&#8217;d written. 
 
 While this highlights how `continue` (and `continue`) can reduce code clarity, I still don&#8217;t feel that&#8217;s a very good explanation. If you check out <cite>JavaScript: The Good Parts</cite> Douglas Crockford doesn&#8217;t provide much help either:
 
-> The continue statement jumps to the top of the loop. I have never seen a piece of code that was not improved by refactoring it to remove the continue statement. 
+> The continue statement jumps to the top of the loop. I have never seen a piece of code that was not improved by refactoring it to remove the continue statement.
 
 <cite>Crockford, Douglas (2008-12-17). JavaScript: The Good Parts: The Good Parts (Kindle Locations 2861-2864). OReilly Media &#8211; A. Kindle Edition.</cite>
 

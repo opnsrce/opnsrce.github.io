@@ -1,13 +1,10 @@
 ---
-id: 268
 title: 'Helpful Tools for Web Developers: TryRuby.org'
 date: 2013-04-08T00:00:39+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=268
-permalink: /helpful-tools-for-web-developers-tryruby-org/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

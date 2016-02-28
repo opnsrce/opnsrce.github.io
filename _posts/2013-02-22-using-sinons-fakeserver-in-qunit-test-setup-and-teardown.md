@@ -1,13 +1,10 @@
 ---
-id: 238
 title: 'Using Sinon&#8217;s FakeServer in QUnit test Setup and Teardown'
 date: 2013-02-22T00:00:40+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=238
-permalink: /using-sinons-fakeserver-in-qunit-test-setup-and-teardown/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586110066
 categories:
@@ -40,7 +37,7 @@ You instantiate the `fakeServer` object using `this.sandbox.useFakeServer`. This
     },
     teardown: function() {
         this.server.restore();
-        
+
         delete this.server;
     }
 });
@@ -61,7 +58,7 @@ But when you run this you&#8217;ll get an error message about not being able to 
     },
     teardown: function() {
         this.server.restore();
-        
+
         delete this.server;
     }
 });

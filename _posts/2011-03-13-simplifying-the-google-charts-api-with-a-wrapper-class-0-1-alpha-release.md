@@ -4,7 +4,6 @@ date: 2011-03-13T23:03:07+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /simplifying-the-google-charts-api-with-a-wrapper-class-0-1-alpha-release/
 categories:
   - Programming / Web Development
 tags:

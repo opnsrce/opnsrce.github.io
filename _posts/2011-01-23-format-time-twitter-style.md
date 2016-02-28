@@ -4,7 +4,6 @@ date: 2011-01-23T22:28:21+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /format-time-twitter-style/
 categories:
   - Code Snippets
 tags:

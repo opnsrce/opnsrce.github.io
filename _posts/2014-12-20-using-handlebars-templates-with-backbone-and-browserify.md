@@ -3,7 +3,6 @@ title: Using Handlebars Templates With Backbone and Browserify
 date: 2014-12-20T21:33:51+00:00
 author: Levi Hackwith
 layout: post
-permalink: /using-handlebars-templates-with-backbone-and-browserify/
 categories:
   - Code Snippets
   - Programming / Web Development

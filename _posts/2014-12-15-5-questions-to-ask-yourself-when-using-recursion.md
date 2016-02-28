@@ -1,11 +1,8 @@
 ---
-id: 369
 title: 5 Questions to Ask Yourself When Using Recursion
 date: 2014-12-15T22:06:13+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=369
-permalink: /5-questions-to-ask-yourself-when-using-recursion/
 icy_video_embed_code:
   -
 categories:

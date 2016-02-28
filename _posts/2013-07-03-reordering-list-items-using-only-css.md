@@ -1,13 +1,10 @@
 ---
-id: 305
 title: Reordering List Items using Only CSS
 date: 2013-07-03T00:00:27+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=305
-permalink: /reordering-list-items-using-only-css/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -87,16 +84,16 @@ And here&#8217;s the CSS to style the menu and set up the dropdown behavior:
 
 /* Add the triangle to the dropdown menu */
 .dropdown-menu .menu-item.active .menu-item-link:after {
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	content: "";
 	position: absolute;
 	top: 12px;
 	right: 8px;
-	border-top: 4px solid rgba(0, 0, 0, 1);    	
+	border-top: 4px solid rgba(0, 0, 0, 1);
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	
+
 }
 </pre>
 

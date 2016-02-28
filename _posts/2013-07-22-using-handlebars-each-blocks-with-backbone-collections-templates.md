@@ -1,13 +1,10 @@
 ---
-id: 315
 title: 'Using Handlebars &#8220;Each&#8221; Blocks with Backbone Collections / Templates'
 date: 2013-07-22T07:56:20+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=315
-permalink: /using-handlebars-each-blocks-with-backbone-collections-templates/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109494
 categories:
@@ -37,7 +34,7 @@ A while back I took Code School&#8217;s amazing <a href="http://www.codeschool.c
 });
 </pre>
 
-For the most part, it&#8217;s pretty straight forward. Basically, they are calling the `addOne` method and passing in the model they want to add to the list view. In the context of the lesson, they were trying to show how you might go about looping through a collection of items and adding them to a list while avoiding issues related to scope. 
+For the most part, it&#8217;s pretty straight forward. Basically, they are calling the `addOne` method and passing in the model they want to add to the list view. In the context of the lesson, they were trying to show how you might go about looping through a collection of items and adding them to a list while avoiding issues related to scope.
 
 <!--more-->
 
@@ -118,7 +115,7 @@ And then do something similar for the template / view:
 
 The trouble with this approach is the fact that Handlebars and Backbone collections expect their data in two different formats: Handlebars expects an object with a property whose value is an array of objects, and the collection just wants an array of objects.
 
-To remedy this, we need to wrap the array of data sent to the Handlebars template in an object that has the property the template is expecting: 
+To remedy this, we need to wrap the array of data sent to the Handlebars template in an object that has the property the template is expecting:
 
 <pre class="brush: jscript; title: ; notranslate" title="">var StudentListView = Backbone.View.extend({
     template: Handlebars.compile($('#student-list-template').html()),

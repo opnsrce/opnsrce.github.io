@@ -1,13 +1,10 @@
 ---
-id: 254
 title: Are We Becoming jQuery Developers Instead Of JavaScript Developers?
 date: 2013-03-27T00:00:38+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=254
-permalink: /are-we-becoming-jquery-developers-instead-of-javascript-developers/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Culture
   - Programming / Web Development
@@ -54,7 +51,7 @@ It&#8217;s not nearly as compact or flexible. However, if you run a <a href="htt
 
 ## 2. It&#8217;s Prevalence Makes it Difficult to Get a Straight Answer on Q&A Sites / Forums
 
-If were to go to a popular Q&A site like <a href="http://www.stackoverflow.com" target="_blank">Stack Overflow</a> and ask a question like _How do I attach an event listener to a DOM element in JavaScript?_, there&#8217;s a pretty good chance that one or more or perhaps all of the answers you&#8217;ll receive will be how to attach an event listener using jQuery. It&#8217;s almost as if jQuery&#8217;s prominence in web development has caused it to become synonymous with the very language it&#8217;s written in. 
+If were to go to a popular Q&A site like <a href="http://www.stackoverflow.com" target="_blank">Stack Overflow</a> and ask a question like _How do I attach an event listener to a DOM element in JavaScript?_, there&#8217;s a pretty good chance that one or more or perhaps all of the answers you&#8217;ll receive will be how to attach an event listener using jQuery. It&#8217;s almost as if jQuery&#8217;s prominence in web development has caused it to become synonymous with the very language it&#8217;s written in.
 
 Now, I&#8217;m not saying that jQuery itself is causing the content of web forums and help sites to become one-sided or go down hill. What I am saying is that the shift towards jQuery-oriented answers from basic JavaScript answers is causing a loss (or at least a muddying) of resources regarding how JavaScript works. It makes it difficult for new developers to get started with the language and for veteran developers to diagnose problems and create new solutions.
 

@@ -3,7 +3,6 @@ title: How to Parse Responses From the StackExchange API Using Node.js
 date: 2014-12-08T18:13:01+00:00
 author: Levi Hackwith
 layout: post
-permalink: /how-to-parse-responses-from-the-stackexchange-api-using-node-js/
 categories:
   - Code Snippets
   - Programming / Web Development

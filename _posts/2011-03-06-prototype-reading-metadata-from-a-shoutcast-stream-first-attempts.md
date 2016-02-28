@@ -4,7 +4,6 @@ date: 2011-03-06T22:12:34+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /prototype-reading-metadata-from-a-shoutcast-stream-first-attempts/
 categories:
   - Programming / Web Development
 tags:

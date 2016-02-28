@@ -3,7 +3,6 @@ title: 'Finishing what you started: Completing (and Releasing) Those Weekend Pro
 date: 2011-02-05T09:21:00+00:00
 author: Levi Hackwith
 layout: post
-permalink: /finishing-what-you-started-completing-and-releasing-those-weekend-projects/
 categories:
   - Programming / Web Development
 ---

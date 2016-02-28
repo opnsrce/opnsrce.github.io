@@ -1,11 +1,9 @@
 ---
-id: 378
 title: 'Autocomplete Awesomeness: Why You Should Prefix Your Media Query
        Variables'
 date: 2014-12-24T00:00:53+00:00
 author: Levi Hackwith
 layout: post
-permalink: /autocomplete-awesomeness-why-you-should-prefix-your-media-query-variables/
 categories:
   - Code Snippets
   - Programming / Web Development

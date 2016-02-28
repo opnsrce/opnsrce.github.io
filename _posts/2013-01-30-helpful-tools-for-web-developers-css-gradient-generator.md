@@ -1,13 +1,10 @@
 ---
-id: 201
 title: 'Helpful Tools For Web Developers: CSS Gradient Generator'
 date: 2013-01-30T00:00:07+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=201
-permalink: /helpful-tools-for-web-developers-css-gradient-generator/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools
@@ -19,7 +16,7 @@ tags:
   - isoart
   - Mozilla
 ---
-CSS3 bring a lot of really neat features to the table: animations, the ability to download fonts, among others. One of the features I was most excited about when CSS3 first began to gain browser support was gradients. Now, web developers and designers would no longer have to create 1px wide background images in order to use gradients in their designs. There was one problem, however. The CSS needed to both create the gradient _and_ provide support across all the major browsers was really, really complicated. 
+CSS3 bring a lot of really neat features to the table: animations, the ability to download fonts, among others. One of the features I was most excited about when CSS3 first began to gain browser support was gradients. Now, web developers and designers would no longer have to create 1px wide background images in order to use gradients in their designs. There was one problem, however. The CSS needed to both create the gradient _and_ provide support across all the major browsers was really, really complicated.
 
 <!--more-->
 

@@ -3,7 +3,6 @@ title: Add Event Listeners to "Play" and Other Media Events Using Sencha Touch
 date: 2011-02-26T18:31:12+00:00
 author: Levi Hackwith
 layout: post
-permalink: /add-event-listeners-to-play-and-other-media-events-using-sencha-touch/
 code: true
 categories:
   - Code Snippets

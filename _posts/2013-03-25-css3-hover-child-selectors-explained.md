@@ -1,13 +1,10 @@
 ---
-id: 253
 title: 'CSS3 :Hover > Child Selectors Explained'
 date: 2013-03-25T00:00:37+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=253
-permalink: /css3-hover-child-selectors-explained/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development

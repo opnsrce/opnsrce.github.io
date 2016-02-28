@@ -1,11 +1,8 @@
 ---
-id: 354
 title: 'Helpful Tools for Web Developers: CSS Arrow, Please'
 date: 2014-09-26T00:00:47+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=354
-permalink: /helpful-tools-for-web-developers-css-arrow-please/
 icy_video_embed_code:
   -
 categories:

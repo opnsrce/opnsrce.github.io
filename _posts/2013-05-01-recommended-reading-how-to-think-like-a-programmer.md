@@ -1,20 +1,17 @@
 ---
-id: 279
 title: 'Recommended Reading: How to Think Like a Programmer'
 date: 2013-05-01T00:00:51+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=279
-permalink: /recommended-reading-how-to-think-like-a-programmer/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Books
   - Programming / Web Development
 tags:
   - problem solving
 ---
-Recently, I began working on improving my problem solving skills as a programmer. Usually, this is done by trying to solve a series of increasing difficult puzzles. No, I&#8217;m not talking about the rumored Microsoft and Google questions of &#8220;How do you move Mount Fuji?&#8221; and &#8220;How many golf balls can fit in a school bus?&#8221; True programming puzzles (at least ones worth solving) are designed to exercise and evaluate your critical thinking skills. One great book for helping increase these skills is <cite>Think Like a Programmer: An Introduction to Creative Problem Solving</cite> by V. Anton Paul. 
+Recently, I began working on improving my problem solving skills as a programmer. Usually, this is done by trying to solve a series of increasing difficult puzzles. No, I&#8217;m not talking about the rumored Microsoft and Google questions of &#8220;How do you move Mount Fuji?&#8221; and &#8220;How many golf balls can fit in a school bus?&#8221; True programming puzzles (at least ones worth solving) are designed to exercise and evaluate your critical thinking skills. One great book for helping increase these skills is <cite>Think Like a Programmer: An Introduction to Creative Problem Solving</cite> by V. Anton Paul.
 
 <!--more-->
 

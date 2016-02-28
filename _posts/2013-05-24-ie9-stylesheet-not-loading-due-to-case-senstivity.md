@@ -1,13 +1,10 @@
 ---
-id: 293
 title: IE9 Stylesheet Not Loading Due to Case Sensitivity
 date: 2013-05-24T00:00:18+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=293
-permalink: /ie9-stylesheet-not-loading-due-to-case-senstivity/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:

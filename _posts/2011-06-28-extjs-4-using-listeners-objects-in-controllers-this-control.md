@@ -3,7 +3,6 @@ title: 'ExtJS 4: Using Listeners objects in Controllers (this.control)'
 date: 2011-06-28T21:46:24+00:00
 author: Levi Hackwith
 layout: post
-permalink: /extjs-4-using-listeners-objects-in-controllers-this-control/
 code: true
 categories:
   - Code Snippets

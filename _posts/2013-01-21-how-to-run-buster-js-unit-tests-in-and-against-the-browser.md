@@ -1,13 +1,10 @@
 ---
-id: 189
 title: How to Run Buster.js Unit Tests in (and Against) the Browser
 date: 2013-01-21T00:00:54+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=189
-permalink: /how-to-run-buster-js-unit-tests-in-and-against-the-browser/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -202,8 +199,8 @@ Go ahead and click the &#8220;capture&#8221; button. This &#8220;captures&#8221;
 
 `buster test`
 
-This fires up Buster and makes it run through all the tests listed in the config file. If everything is configured properly, you should see something like this:`` 
-  
+This fires up Buster and makes it run through all the tests listed in the config file. If everything is configured properly, you should see something like this:``
+
 Which, if you remember from the previous lesson, means that all the unit tests are passing.
 
 ## Expanding the `NumberCruncher` Object
@@ -281,7 +278,7 @@ When Buster.js prepares to run a testcase, it looks for two methods: `setUp` and
 </pre>
 
 Rerun the tests using same `buster test` command used earlier:
-  
+
 ```[Previously](http://www.levihackwith.com/getting-started-with-buster-js/ "Getting Started With Buster.js"), I gave a brief introduction to Buster.js and how it&#8217;s used. Today, I&#8217;m going to show you how to set up Buster.js to run tests against a browser as well as how to use `setUp` and `tearDown` to reduce redundancy in your unit tests.
 
 <!--more-->
@@ -468,8 +465,8 @@ Go ahead and click the &#8220;capture&#8221; button. This &#8220;captures&#8221;
 
 `buster test`
 
-This fires up Buster and makes it run through all the tests listed in the config file. If everything is configured properly, you should see something like this:`` 
-  
+This fires up Buster and makes it run through all the tests listed in the config file. If everything is configured properly, you should see something like this:``
+
 Which, if you remember from the previous lesson, means that all the unit tests are passing.
 
 ## Expanding the `NumberCruncher` Object
@@ -547,9 +544,9 @@ When Buster.js prepares to run a testcase, it looks for two methods: `setUp` and
 </pre>
 
 Rerun the tests using same `buster test` command used earlier:
-  
-``` 
-  
+
+```
+
 Uh-oh. What went wrong? Well, if you take a look at the code, you&#8217;ll notice that the `numberCruncher` variable is declared locally inside the `setUp` method. It appears that removing the redundant object instantiation from each test has also removed the object from the necessary scope required to run the tests. To remedy this, the instance of the `numberCruncher` object needs to be made a property of the testcase:
 
 <pre class="brush: jscript; title: ; notranslate" title="">buster.testCase('Number Cruncher', {

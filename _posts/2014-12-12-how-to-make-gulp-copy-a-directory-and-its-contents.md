@@ -1,11 +1,8 @@
 ---
-id: 366
 title: How to Make Gulp Copy a Directory AND Its Contents
 date: 2014-12-12T22:43:06+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=366
-permalink: /how-to-make-gulp-copy-a-directory-and-its-contents/
 icy_video_embed_code:
   -
 dsq_thread_id:

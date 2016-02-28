@@ -1,13 +1,10 @@
 ---
-id: 307
 title: Roll Your Own Dropdown Menu Using Pure CSS
 date: 2013-07-01T00:00:03+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=307
-permalink: /roll-your-own-dropdown-menu-using-pure-css/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109596
 categories:
@@ -94,7 +91,7 @@ If you&#8217;re familiar with CSS, most of the code here is pretty self explanat
 
 ## Hide and Hover: Making the Menu Drop Down
 
-With the markup and basic styles now in place, we now have our selves a very nice static menu. However, the goal of the project is to create a _drop down_ menu which means we&#8217;re going to need a way to show and hide the list items not at the top of the list. 
+With the markup and basic styles now in place, we now have our selves a very nice static menu. However, the goal of the project is to create a _drop down_ menu which means we&#8217;re going to need a way to show and hide the list items not at the top of the list.
 
 To start off, we&#8217;re going to need to modify our markup and add an &#8220;`active`&#8221; class to the first element in the list so we know which list item we want to keep visible. Go ahead and update markup to look like the following:
 
@@ -155,23 +152,23 @@ Once you add that to the code, you&#8217;ll notice that the background color of 
 Now, we&#8217;re going to add a cool little down arrow to the right of the active menu item. Traditionally, we&#8217;d use some kind of <span> tag with its `background-image` property set to the location of an arrow icon we created. With this tutorial being about using _only_ CSS to create our dropdown menu, we&#8217;re going to instead use the `:after` selector and the `:content` property to create our &#8220;icon&#8221; on the fly using code I learned from Chris Coyier over at <a href="http://css-tricks.com/snippets/css/css-triangle/" target="_blank">CSS tricks</a>. Add the following rule to your stylesheet:
 
 <pre class="brush: css; title: ; notranslate" title="">.dropdown-menu .menu-item.active .menu-item-link:after {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     content: "";
     position: absolute;
     top: 18px;
     right: 8px;
-    border-top: 4px solid rgba(0, 0, 0, 1);    	
+    border-top: 4px solid rgba(0, 0, 0, 1);
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
 }
 </pre>
 
-Now before you starting mumbling _WTF_ at your screen, let me explain what&#8217;s going on here. 
+Now before you starting mumbling _WTF_ at your screen, let me explain what&#8217;s going on here.
 
 The first thing I want to cover is the `:after selector`. If you&#8217;ve never encountered this one before, the best definition I&#8217;ve found is from the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/::after):
 
-> The CSS :after pseudo-element matches a virtual last child of the selected element. Typically used to add cosmetic content to an element, by using the content CSS property. This element is inline by default. 
+> The CSS :after pseudo-element matches a virtual last child of the selected element. Typically used to add cosmetic content to an element, by using the content CSS property. This element is inline by default.
 
 By using the `:after` selector along with the `:content` property, we can dynamically inject content designed to appear _after_ our menu item link. In the code above, we&#8217;re injecting an empty string, positioning it in the middle of the list item, and then styling it to look like a triangle using the `border` properties. The finished result will look something like this:
 

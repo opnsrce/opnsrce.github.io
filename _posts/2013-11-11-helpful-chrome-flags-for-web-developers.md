@@ -1,13 +1,10 @@
 ---
-id: 322
 title: Helpful Chrome Flags For Web Developers
 date: 2013-11-11T00:00:17+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=322
-permalink: /helpful-chrome-flags-for-web-developers/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools
@@ -15,7 +12,7 @@ tags:
   - chrome
   - flags
 ---
-Most of the time, I develop locally when writing code: I don&#8217;t like taking the time to upload files to a server for testing. Unfortunately, this can make testing things like AJAX calls and references to local files difficult due to security settings that come default with Chrome (my preferred browser). Recently, I discovered some really handy flags that you can append to Chrome when launching from the command line. 
+Most of the time, I develop locally when writing code: I don&#8217;t like taking the time to upload files to a server for testing. Unfortunately, this can make testing things like AJAX calls and references to local files difficult due to security settings that come default with Chrome (my preferred browser). Recently, I discovered some really handy flags that you can append to Chrome when launching from the command line.
 
 <!--more-->
 
@@ -25,7 +22,7 @@ This flag is great for when you want to be able to send AJAX requests to a domai
 
 ## &#8211;allow-file-access-from-files
 
-This flag lets files loaded in the browser (that is being served locally via `file://` instead of a web server) access other local files. I find this comes in handy when I want to work with a copy of a website without spinning up a web server to view the files. 
+This flag lets files loaded in the browser (that is being served locally via `file://` instead of a web server) access other local files. I find this comes in handy when I want to work with a copy of a website without spinning up a web server to view the files.
 
 ## What Flags Have You Found Helpful?
 

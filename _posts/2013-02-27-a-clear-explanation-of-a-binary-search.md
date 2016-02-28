@@ -1,13 +1,10 @@
 ---
-id: 242
 title: A Clear Explanation of A Binary Search
 date: 2013-02-27T00:00:26+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=242
-permalink: /a-clear-explanation-of-a-binary-search/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -19,7 +16,7 @@ I&#8217;ll be the first to admit that there are many aspects of computer science
 
 <!--more-->
 
-> &#8230;finds the position of a specified value (the input &#8220;key&#8221;) within a sorted array.\[1\]\[2\] In each step, the algorithm compares the input key value with the key value of the middle element of the array. If the keys match, then a matching element has been found so its index, or position, is returned. Otherwise, if the sought key is less than the middle element&#8217;s key, then the algorithm repeats its action on the sub-array to the left of the middle element or, if the input key is greater, on the sub-array to the right. If the remaining array to be searched is reduced to zero, then the key cannot be found in the array and a special &#8220;Not found&#8221; indication is returned. 
+> &#8230;finds the position of a specified value (the input &#8220;key&#8221;) within a sorted array.\[1\]\[2\] In each step, the algorithm compares the input key value with the key value of the middle element of the array. If the keys match, then a matching element has been found so its index, or position, is returned. Otherwise, if the sought key is less than the middle element&#8217;s key, then the algorithm repeats its action on the sub-array to the left of the middle element or, if the input key is greater, on the sub-array to the right. If the remaining array to be searched is reduced to zero, then the key cannot be found in the array and a special &#8220;Not found&#8221; indication is returned.
 
 Makes perfect sense, doesn&#8217;t it? Yeah, I didn&#8217;t get it either. Luckily, that rather complicated definition can be broken down into [3] steps that you can repeat until you find the value you&#8217;re looking for. For this example, we&#8217;re going to use an array of numbers from 1 to 500 and we&#8217;re going to be searching for the number 432.
 

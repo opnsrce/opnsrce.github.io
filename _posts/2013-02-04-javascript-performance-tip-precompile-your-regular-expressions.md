@@ -1,13 +1,10 @@
 ---
-id: 207
 title: 'JavaScript Performance Tip: Precompile Your Regular Expressions'
 date: 2013-02-04T00:00:32+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=207
-permalink: /javascript-performance-tip-precompile-your-regular-expressions/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -20,7 +17,7 @@ When it comes to speeding up your web applications, the little things can make q
 
 <!--more-->
 
-<pre class="brush: jscript; title: ; notranslate" title="">var preCompiledReplaceRegex = /test/g; 
+<pre class="brush: jscript; title: ; notranslate" title="">var preCompiledReplaceRegex = /test/g;
     myHtml = "&lt;span&gt;This is a test&lt;/span&gt;&lt;div&gt;Of a regex&lt;/div&gt;&lt;p&gt;test&lt;/p&gt;&lt;em&gt;test&lt;/em&gt;";
 
    myHtml.replace(preCompiledReplaceRegex, 'kittens'); // Compiled Regex

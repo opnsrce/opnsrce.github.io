@@ -1,13 +1,10 @@
 ---
-id: 199
 title: 3 Reasons a Web Developer Needs a Website
 date: 2013-01-28T00:00:17+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=199
-permalink: /three-reasons-every-web-developer-needs-a-website/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Opinion
   - Programming / Web Development
@@ -35,7 +32,7 @@ I&#8217;m sure we&#8217;ve all heard it said that job hunting today is not so mu
 
 So how do we go about getting around these issues? Simple: talk about your work (or other&#8217;s work you enjoy) on your website. Learned a new framework recently? Write a tutorial about it. Found a really great tool that&#8217;s saved you hours and hours of time? Write a post about how it&#8217;s helped you. And, I think most importantly of all: did you fight a problem for hours and hours until you eventually stumbled upon the solution? Share that with the world. Odds are, you&#8217;re not the only one suffering from the same issue and your post could save someone hours of time. But what does all this give you in the end? How does taking all this time to write down the tutorials, tools, and troubles help you in the end? Well, if you&#8217;re persistent about it, people will begin to associate your name with quality solutions to _specific_ problems and frameworks. Some of those people may even be technical recruiters or even book publishers looking for someone to fill a need in their organization.
 
-## 3. It Gives Us Perspective 
+## 3. It Gives Us Perspective
 
 I&#8217;ve written about this a bit in [my previous article about casual coding](http://www.levihackwith.com/in-defense-of-casual-coding/ "In Defense of Casual Coding"), but I&#8217;d like to expand on it a bit more here. Web development work not only isolates us from other programmers (see point 2), it can also isolate us from criticism and judgement of our work. If you&#8217;ve worked somewhere for 8+ years as the sole JavaScript developer in your organization, how do you know if you&#8217;re truly good at what you do? Sure, your employer thinks you&#8217;re a rockstar, but what about the web development community at large? How do you stack up against other developers? Are there gaps in your skill set you don&#8217;t know about?
 

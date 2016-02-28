@@ -1,13 +1,10 @@
 ---
-id: 182
 title: 'Book Recommendation: High Performance JavaScript'
 date: 2013-01-16T00:00:15+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=182
-permalink: /book-recommendation-high-performance-javascript/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Books
   - Programming / Web Development
@@ -21,12 +18,12 @@ If you&#8217;ve often found yourself struggling to figure out the best way to wr
 <!--more-->
 
 
-  
+
 Luckily, Nicholas C Zakas is here to help. In his book <cite>High Performance JavaScript (Build Faster Web Application Interfaces)</cite>, he goes over some of the more common performance pitfalls when it comes to writing efficient JavaScript that scales well. Here&#8217;s one my favorite tidbits regarding identifier resolution:
 
 > Identifier resolution isn’t free, as in fact no computer operation really is without some sort of performance overhead. The deeper into the execution context’s scope chain an identifier exists, the slower it is to access for both reads and writes. Consequently, local variables are always the fastest to access inside of a function, whereas global variables will generally be the slowest (optimizing JavaScript engines are capable of tuning this in certain situations). Keep in mind that global variables always exist in the last variable object of the execution context’s scope chain, so they are always the furthest away to resolve. Figures 2-4 and 2-5 show the speed of identifier resolution based on their depth in the scope chain. A depth of 1 indicates a local variable.
-> 
-> ..A good rule of thumb is to always store out-of-scope values in local variables if they are used more than once within a function.. 
+>
+> ..A good rule of thumb is to always store out-of-scope values in local variables if they are used more than once within a function..
 
 <a href="http://www.levihackwith.com/?attachment_id=184" rel="attachment wp-att-184"><img src="http://www.levihackwith.com/wp-content/uploads/2013/01/figure-2-4.png" alt="figure 2-4" width="678" height="620" class="aligncenter size-full wp-image-184" srcset="http://www.levihackwith.com/wp-content/uploads/2013/01/figure-2-4-300x274.png 300w, http://www.levihackwith.com/wp-content/uploads/2013/01/figure-2-4.png 678w" sizes="(max-width: 678px) 100vw, 678px" /></a>
 

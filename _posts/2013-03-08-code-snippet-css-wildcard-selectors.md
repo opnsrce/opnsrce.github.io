@@ -1,13 +1,10 @@
 ---
-id: 251
 title: 'Code Snippet: CSS Wildcard Selectors'
 date: 2013-03-08T00:00:24+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=251
-permalink: /code-snippet-css-wildcard-selectors/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109947
 categories:
@@ -27,7 +24,7 @@ Just a quick CSS code snippet I found helpful the other day. CSS wildCard select
 }
 </pre>
 
-The above CSS will find any anchor tag whose `id` attribute contains the text &#8220;-myElement&#8221;. 
+The above CSS will find any anchor tag whose `id` attribute contains the text &#8220;-myElement&#8221;.
 
 ## Attribute &#8220;Ends With&#8221; Selector
 

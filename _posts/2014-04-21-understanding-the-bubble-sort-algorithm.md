@@ -1,13 +1,10 @@
 ---
-id: 342
 title: Understanding the Bubble Sort Algorithm
 date: 2014-04-21T00:00:06+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=342
-permalink: /understanding-the-bubble-sort-algorithm/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109371
 categories:
@@ -39,25 +36,25 @@ The next thing we&#8217;ll cover is how you might go about writing a function th
 
 <pre class="brush: jscript; title: ; notranslate" title="">function swap(dataArray, index1, index2) {
     var tmp = dataArray[index1];
-    
+
     dataArray[index1] = dataArray[index2];
     dataArray[index2] = tmp;
-    
+
     return dataArray;
 }
 
 function bubbleSort(data) {
     var pointer = 0,
         maxIndexToCheck = data.length - 1;
-        
+
     for(; maxIndexToCheck &gt;= 1; maxIndexToCheck--) {
-        for(pointer = 0; (pointer + 1) &lt;= maxIndexToCheck; pointer++) {   
+        for(pointer = 0; (pointer + 1) &lt;= maxIndexToCheck; pointer++) {
             if(data[pointer] &gt; data[pointer + 1]) {
                 data = swap(data, pointer, (pointer + 1));
-            }         
+            }
         }
     }
-    
+
     return data;
 }
 </pre>
@@ -67,7 +64,7 @@ The `swap` method is just there to swap value arrays, so let&#8217;s take a clos
 <pre class="brush: jscript; title: ; notranslate" title="">...
     var pointer = 0,
         maxIndexToCheck = data.length - 1;
-        
+
     for(; maxIndexToCheck &gt;= 1; maxIndexToCheck--) {
 ...
 </pre>
@@ -75,10 +72,10 @@ The `swap` method is just there to swap value arrays, so let&#8217;s take a clos
 Next, we create a loop that will move through pairs of values in the array comparing the left most value to the value next to it. If the value on the left is greater than the value on the right, we swap those two values&#8217; locations in the array:
 
 <pre class="brush: jscript; title: ; notranslate" title="">...
-        for(pointer = 0; (pointer + 1) &lt;= maxIndexToCheck; pointer++) {   
+        for(pointer = 0; (pointer + 1) &lt;= maxIndexToCheck; pointer++) {
             if(data[pointer] &gt; data[pointer + 1]) {
                 data = swap(data, pointer, (pointer + 1));
-            }         
+            }
         }
 ...
 </pre>
@@ -89,6 +86,6 @@ Finally, once both loops are complete we return the newly-sorted array.
 
 ## A Word of Warning
 
-Despite it&#8217;s ease of use and implementation, the bubble sort algorithm is hardly the best approach to sorting a large amount of data. The worse-case scenario for this algorithm is `O(n<sup>2</sup>)` which means that the most iterations needed to sort the algorithm equals the number of items being sorted squared. We&#8217;ll get into algorithm speed in a later post, but for now just know that there are better algorithms to use besides this one. 
+Despite it&#8217;s ease of use and implementation, the bubble sort algorithm is hardly the best approach to sorting a large amount of data. The worse-case scenario for this algorithm is `O(n<sup>2</sup>)` which means that the most iterations needed to sort the algorithm equals the number of items being sorted squared. We&#8217;ll get into algorithm speed in a later post, but for now just know that there are better algorithms to use besides this one.
 
 Photo Credit: [Evan Leeson](https://www.flickr.com/photos/ecstaticist/3067907278/in/photolist-5F6PX5-5zMnad-5zx43t-5vAas4-5hkay3-5gq8WN-4GGyfS-4muZzK-4iRtBa-3baHjy-2XCNR3-2wCvrp-2nH7T1-2hwwC5-2gkSwy-2ektuu-R9ziU-Jkf4T-BjtkP-B7566-ABdSL-sFrSx-iWUJ7-cMUCz-6tCSB-5nqAj-3Tk26-eevyN5-cxTCa5-c42Ehh-9a52Ay-7Zbcq9-6r9mfH-6jhVFz-5NNVLa-dXziJS-d4QcPo-8HyYww-5rPf1i-55YATm-4DxQbz-4z4DGj-Fwhun-z2Bfj-mRKNQ-9jdFQ-2WCJ3Y-5usJQy-4JmHhG-NEozn)

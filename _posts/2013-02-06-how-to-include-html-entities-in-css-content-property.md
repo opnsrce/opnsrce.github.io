@@ -1,13 +1,10 @@
 ---
-id: 214
 title: How to Include HTML Entities in CSS Content Property
 date: 2013-02-06T00:00:40+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=214
-permalink: /how-to-include-html-entities-in-css-content-property/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development

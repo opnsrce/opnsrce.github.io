@@ -1,19 +1,16 @@
 ---
-id: 130
 title: 'ExtJS 4: Uncaught TypeError: Cannot call method &#8216;substring&#8217; of undefined ext-all-debug line 4384'
 date: 2012-02-06T00:00:13+00:00
 author: Levi Hackwith
 excerpt: |
   When working with ExtJS 4, you'll often run into ambiguous error message like this one:
-  
+
   Uncaught TypeError: Cannot call method 'substring' of undefined
-  
+
   ext-all-debug.js line 4384
-  
+
   I recently ran into this while coding up an Ext application for another blog post, and I thought I'd share with you its root cause and solution.
 layout: post
-guid: http://www.levihackwith.com/?p=130
-permalink: /extjs-4-uncaught-typeerror-cannot-call-method-substring-of-undefined-ext-all-debug-line-4384/
 categories:
   - Programming / Web Development
 tags:

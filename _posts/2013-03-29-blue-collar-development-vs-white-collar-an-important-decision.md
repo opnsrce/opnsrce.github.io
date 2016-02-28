@@ -1,13 +1,10 @@
 ---
-id: 256
 title: 'Blue Collar Development Vs White Collar: An Important Decision'
 date: 2013-03-29T00:00:43+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=256
-permalink: /blue-collar-development-vs-white-collar-an-important-decision/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Culture
   - Programming / Web Development

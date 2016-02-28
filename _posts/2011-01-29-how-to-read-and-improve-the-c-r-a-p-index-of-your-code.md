@@ -1,12 +1,9 @@
 ---
-id: 15
 title: How to Read and Improve the C.R.A.P Index of your code
 date: 2011-01-29T00:00:52+00:00
 author: Levi Hackwith
 layout: post
 code: true
-guid: http://www.levihackwith.com/?p=15
-permalink: /how-to-read-and-improve-the-c-r-a-p-index-of-your-code/
 images_folder: /improve-crap-index
 categories:
   - Programming / Web Development

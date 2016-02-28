@@ -1,11 +1,8 @@
 ---
-id: 146
 title: How to Remove / Update Tooltips In Twitter Bootstrap
 date: 2012-08-09T00:00:53+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=146
-permalink: /how-to-remove-update-tooltips-in-twitter-bootstrap/
 categories:
   - Code Snippets
   - Programming / Web Development

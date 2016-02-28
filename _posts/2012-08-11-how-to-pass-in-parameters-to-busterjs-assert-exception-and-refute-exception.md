@@ -1,11 +1,8 @@
 ---
-id: 147
 title: How to Pass in Parameters to BusterJs assert.exception and refute.exception
 date: 2012-08-11T14:20:36+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=147
-permalink: /how-to-pass-in-parameters-to-busterjs-assert-exception-and-refute-exception/
 categories:
   - Code Snippets
   - Programming / Web Development

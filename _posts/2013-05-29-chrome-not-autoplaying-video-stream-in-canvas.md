@@ -1,13 +1,10 @@
 ---
-id: 299
 title: Chrome Not Autoplaying Video Stream in Canvas
 date: 2013-05-29T00:00:34+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=299
-permalink: /chrome-not-autoplaying-video-stream-in-canvas/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -24,7 +21,7 @@ I was recently tinkering with some <a href="http://davidwalsh.name/demo/camera.p
 });
 </pre>
 
-Here I&#8217;ve attached an event listener to the `canplay` event of the video element. When the event fires, it sets the value of the display property to whatever it happens to be currently. While this code doesn&#8217;t exactly _do_ anything in and of itself, it _does_ force a `recalculate style` event to fire. This is turn makes the video stream visible. 
+Here I&#8217;ve attached an event listener to the `canplay` event of the video element. When the event fires, it sets the value of the display property to whatever it happens to be currently. While this code doesn&#8217;t exactly _do_ anything in and of itself, it _does_ force a `recalculate style` event to fire. This is turn makes the video stream visible.
 
 ## Feedback Requested
 

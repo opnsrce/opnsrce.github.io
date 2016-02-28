@@ -1,13 +1,10 @@
 ---
-id: 218
 title: 'Recommended Reading: Web Form Design: Filling in the Blanks'
 date: 2013-02-08T00:00:03+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=218
-permalink: /recommended-reading-web-form-design-filling-in-the-blanks/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586112726
 categories:
@@ -23,7 +20,7 @@ When it comes to web design, I think that one of the most forgotten components i
 
 One thing I love about this book is that it&#8217;s highly technical without sounding overly opinionated. Luke&#8217;s writing style is such that he&#8217;s able to convey his message _and_ back it up with data. Also, the question-and-answer style chapter titles like &#8220;Should I top-, right-, or left-align the labels for input fields?&#8221; allows for quick skimming when you have a specific design question you want an answer to. And when you find that answer it&#8217;s concise, well phrased, and easy to follow:
 
-> When you are trying to reduce completion times or if you need flexible label lengths for localization, consider top-aligned labels. When you have similar goals but vertical screen real estate constraints, consider right-aligned labels. When your form requires people to scan labels to learn what’s required or to answer a few specific questions out of many, consider left-aligned labels. 
+> When you are trying to reduce completion times or if you need flexible label lengths for localization, consider top-aligned labels. When you have similar goals but vertical screen real estate constraints, consider right-aligned labels. When your form requires people to scan labels to learn what’s required or to answer a few specific questions out of many, consider left-aligned labels.
 
 <cite>Wroblewski, Luke (2011-03-18). Web Form Design (Kindle Locations 272-274). Rosenfeld Media. Kindle Edition. </cite>
 

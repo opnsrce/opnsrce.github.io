@@ -1,11 +1,8 @@
 ---
-id: 312
 title: 'Code Snippet: Create a Simple &#8220;Winner&#8221; Badge Using only CSS'
 date: 2013-07-08T00:00:07+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=312
-permalink: /code-snippet-create-a-simple-winner-badge-using-only-css/
 icy_video_embed_code:
   -
 dsq_thread_id:

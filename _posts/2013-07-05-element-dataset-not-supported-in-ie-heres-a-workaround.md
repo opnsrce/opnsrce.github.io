@@ -1,13 +1,10 @@
 ---
-id: 304
 title: 'Element.dataset not supported in IE: Here&#8217;s a Workaround'
 date: 2013-07-05T00:00:54+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=304
-permalink: /element-dataset-not-supported-in-ie-heres-a-workaround/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109684
 categories:

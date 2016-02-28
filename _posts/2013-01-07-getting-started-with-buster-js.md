@@ -1,13 +1,10 @@
 ---
-id: 166
 title: Getting Started With Buster.js
 date: 2013-01-07T00:00:22+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=166
-permalink: /getting-started-with-buster-js/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
 tags:
@@ -66,7 +63,7 @@ To run your tests, navigate to the directory containing the test script and type
 `node test_number_cruncher.js`
 
 As expected, the test fails with a pretty serious error message:
-  
+
 ``<a href="http://www.busterjs.org" target="_blank">Buster.js</a> is a unit testing framework for JavaScript applications. With it, you can write web applications using the <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a> method which in turn leads to code that is easier to change and maintain.
 
 <!--more-->
@@ -115,8 +112,8 @@ To run your tests, navigate to the directory containing the test script and type
 `node test_number_cruncher.js`
 
 As expected, the test fails with a pretty serious error message:
-  
-`` 
+
+``
 
 While that all seems rather complicated, all it&#8217;s really trying to tell you is that it couldn&#8217;t find the `NumberCruncher` module that was asked for at the top of the file.
 
@@ -214,7 +211,7 @@ module.exports = NumberCruncher;
 </pre>
 
 Here, the `add` method has been altered so it multiplies the passed in numbers instead of adding them together. See what happens when you run your unit tests:
-  
+
 `<br />
 Number Cruncher: F`
 

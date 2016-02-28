@@ -1,13 +1,10 @@
 ---
-id: 221
 title: How to Quickly Convert a JavaScript Date Object Into a Timestamp
 date: 2013-02-11T00:00:37+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=221
-permalink: /quickly-convert-js-date-to-timestamp/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -22,7 +19,7 @@ One of things we often have to do in JavaScript is compare dates to see how much
     stop,
     elapsedMilliseconds;
 
-    
+
     start = new Date();
     someProcess();
     stop = new Date();
@@ -34,7 +31,7 @@ However, there&#8217;s a simpler way:
 
 <pre class="brush: jscript; title: ; notranslate" title="">var start,
     stop;
-    
+
     start = +new Date();
     someProcess();
     stop = +new Date();

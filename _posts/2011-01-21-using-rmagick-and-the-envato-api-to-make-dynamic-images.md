@@ -4,7 +4,6 @@ date: 2011-01-21T22:36:05+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /using-rmagick-and-the-envato-api-to-make-dynamic-images/
 categories:
   - Programming / Web Development
 tags:

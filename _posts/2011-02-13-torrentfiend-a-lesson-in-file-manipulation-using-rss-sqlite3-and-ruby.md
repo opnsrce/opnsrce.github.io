@@ -1,11 +1,9 @@
 ---
-id: 33
 title: 'TorrentFiend: A Lesson in File Manipulation Using RSS, SQLite3 and Ruby'
 date: 2011-02-13T10:01:45+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /torrentfiend-a-lesson-in-file-manipulation-using-rss-sqlite3-and-ruby/
 categories:
   - Programming / Web Development
 tags:

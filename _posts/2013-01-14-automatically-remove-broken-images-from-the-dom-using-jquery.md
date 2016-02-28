@@ -1,13 +1,10 @@
 ---
-id: 175
 title: Automatically Remove Broken Images from the DOM using jQuery
 date: 2013-01-14T00:00:43+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=175
-permalink: /automatically-remove-broken-images-from-the-dom-using-jquery/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -69,10 +66,10 @@ This would remove the entire `<div>` and not just the image.
 There&#8217;s some pretty cool things you can do with this event handler beyond just removing the image from the page. You could also:
 
 1. Send an AJAX request that triggers an email to someone if an image fails to load multiple times.
-  
+
 2. Retrieve an alternate image or custom placeholder image.
 
-If you need to grab the source of the image that failed, you can simply call 
+If you need to grab the source of the image that failed, you can simply call
 
 <pre class="brush: jscript; title: ; notranslate" title="">$(this).attr('src')
 </pre>

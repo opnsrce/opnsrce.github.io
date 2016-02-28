@@ -4,7 +4,6 @@ date: 2011-07-04T00:00:38+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /extjs-4-combo-boxes-loadrecord-and-remote-stores/
 categories:
   - Code Snippets
   - Programming / Web Development

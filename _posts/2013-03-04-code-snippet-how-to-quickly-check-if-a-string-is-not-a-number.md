@@ -1,13 +1,10 @@
 ---
-id: 246
 title: 'Code Snippet: How to Quickly Check if a String is Not a Number'
 date: 2013-03-04T00:00:51+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=246
-permalink: /code-snippet-how-to-quickly-check-if-a-string-is-not-a-number/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Code Snippets
   - Programming / Web Development

@@ -1,13 +1,10 @@
 ---
-id: 169
 title: 'Helpful Tools For Web Developers: JsPerf'
 date: 2013-01-11T00:00:06+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=169
-permalink: /helpful-tools-for-web-developers-jsperf/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

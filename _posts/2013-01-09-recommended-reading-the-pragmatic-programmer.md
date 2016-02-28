@@ -1,13 +1,10 @@
 ---
-id: 164
 title: 'Recommended Reading: The Pragmatic Programmer'
 date: 2013-01-09T00:00:24+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=164
-permalink: /recommended-reading-the-pragmatic-programmer/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Books
   - Programming / Web Development
@@ -29,7 +26,7 @@ For example, in addition to having chapters comparing the advantage of plain tex
 The quote above is just one of many reasons I fell in love with this book. Hunt and Thomas go out of their way to address the underlying causes of bad code, poor team cohesion, and missed requirements and they do it in a way that doesn&#8217;t feel condescending or overly touchy-feely. In addition, they still take the time to help you improve your skills on a technical level. On refactoring:
 
 > At its heart, refactoring is redesign. Anything that you or others on your team designed can be redesigned in light of new facts, deeper understandings, changing requirements, and so on. But if you proceed to rip up vast quantities of code with wild abandon, you may find yourself in a worse position than when you started. Clearly, refactoring is an activity that needs to be undertaken slowly, deliberately, and carefully. Martin Fowler offers the following simple tips on how to refactor without doing more harm than good:
-> 
+>
 >   1. Don&#8217;t try to refactor and add functionality at the same time.
 >   2. Make sure you have good tests before you begin refactoring. Run the tests as often as possible. That way you will know quickly if your changes have broken anything.
 >   3. Take short, deliberate steps: move a field from one class to another, fuse two similar methods into a superclass. Refactoring often involves making many localized changes that result in a larger-scale change. If you keep your steps small, and test after each step, you will avoid prolonged debugging.

@@ -8,7 +8,6 @@ function that does the calling.2This creates a nice flow down the source code
 module from high level to low level.'
 code: true
 layout: post
-permalink: /order-your-methods-to-add-clarity-to-your-code/
 categories:
   - Programming / Web Development
 tags:

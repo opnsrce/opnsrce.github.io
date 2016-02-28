@@ -1,11 +1,8 @@
 ---
-id: 142
 title: Really Simple Plugin for Making Stateful Dropdowns in Twitter Bootstrap
 date: 2012-08-07T21:03:40+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=142
-permalink: /really-simple-plugin-for-making-stateful-dropdowns-in-twitter-bootstrap/
 categories:
   - Code Snippets
   - Programming / Web Development

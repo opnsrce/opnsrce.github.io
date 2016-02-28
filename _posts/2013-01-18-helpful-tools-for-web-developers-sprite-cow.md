@@ -1,13 +1,10 @@
 ---
-id: 187
 title: 'Helpful Tools for Web Developers: Sprite Cow'
 date: 2013-01-18T00:00:31+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=187
-permalink: /helpful-tools-for-web-developers-sprite-cow/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Programming / Web Development
   - Tools

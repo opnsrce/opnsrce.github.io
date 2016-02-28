@@ -3,7 +3,6 @@ title: 'ExtJS 4: Passing Filters Between a Grid and a Chart Store'
 date: 2011-10-02T16:16:42+00:00
 author: Levi Hackwith
 layout: post
-permalink: /extjs-4-passing-filters-between-a-grid-and-a-chart-store/
 code: true
 categories:
   - Programming / Web Development

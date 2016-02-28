@@ -1,13 +1,10 @@
 ---
-id: 296
 title: 'Code Snippet: How to Sort An Array of JSON Objects By Property'
 date: 2013-05-27T00:00:14+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=296
-permalink: /code-snippet-how-to-sort-an-array-of-json-objects-by-property/
 icy_video_embed_code:
-  - 
+  -
 dsq_thread_id:
   - 4586109770
 categories:

@@ -1,13 +1,10 @@
 ---
-id: 194
 title: 'Recommended Reading: JavaScript: The Good Parts'
 date: 2013-01-25T00:00:57+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=194
-permalink: /recommended-reading-javascript-the-good-parts/
 icy_video_embed_code:
-  - 
+  -
 categories:
   - Books
   - Programming / Web Development
@@ -19,7 +16,7 @@ Let&#8217;s be honest, as we gain more experience as JavaScript developers we of
 
 <!--more-->
 
-> JavaScript&#8217;s new operator creates a new object that inherits from the operand&#8217;s prototype member, and then calls the operand, binding the new object to this. This gives the operand (which had better be a constructor function) a chance to customize the new object before it is returned to the requestor. If you forget to use the new operator, you instead get an ordinary function call, and this is bound to the global object instead of to a new object. That means that your function will be clobbering global variables when it attempts to initialize the new members. That is a very bad thing. There is no compile-time warning. There is no runtime warning. 
+> JavaScript&#8217;s new operator creates a new object that inherits from the operand&#8217;s prototype member, and then calls the operand, binding the new object to this. This gives the operand (which had better be a constructor function) a chance to customize the new object before it is returned to the requestor. If you forget to use the new operator, you instead get an ordinary function call, and this is bound to the global object instead of to a new object. That means that your function will be clobbering global variables when it attempts to initialize the new members. That is a very bad thing. There is no compile-time warning. There is no runtime warning.
 
 <cite>Crockford, Douglas (2008-12-17). JavaScript: The Good Parts: The Good Parts (Kindle Locations 2947-2953). OReilly Media &#8211; A. Kindle Edition. </cite>
 

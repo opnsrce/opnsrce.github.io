@@ -4,7 +4,6 @@ date: 2011-06-26T00:00:41+00:00
 author: Levi Hackwith
 layout: post
 code: true
-permalink: /extjs-4-proxy-calling-create-instead-of-update-when-saving-record/
 categories:
   - Programming / Web Development
 tags:

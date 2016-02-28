@@ -1,11 +1,8 @@
 ---
-id: 362
 title: Formatting Dates Using Moment.js, Handlebars, Express, and Node.js
 date: 2014-12-08T00:00:26+00:00
 author: Levi Hackwith
 layout: post
-guid: http://www.levihackwith.com/?p=362
-permalink: /formatting-dates-using-moment-js-handlebars-express-and-node-js/
 categories:
     - Code Snippets
     - Programming / Web Development
