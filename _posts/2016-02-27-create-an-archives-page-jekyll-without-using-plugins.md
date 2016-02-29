@@ -3,6 +3,7 @@ title: 'Create an Archives Page in Jekyll Without Using Plugins'
 date: 2016-02-27T00:00:34+00:00
 author: Levi Hackwith
 layout: post
+code: true
 permalink: /create-an-archives-page-jekyll-without-using-plugins/
 categories:
   - Programming / Web Development
