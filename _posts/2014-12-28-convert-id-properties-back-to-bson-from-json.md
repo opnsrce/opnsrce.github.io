@@ -2,6 +2,7 @@
 title: Convert ID Properties Back to BSON from JSON
 date: 2014-12-28T22:58:02+00:00
 author: Levi Hackwith
+code: true
 layout: post
 categories:
   - Code Snippets

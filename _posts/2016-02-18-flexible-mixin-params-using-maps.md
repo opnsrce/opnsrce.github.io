@@ -3,6 +3,7 @@ title: 'Flexible Mixin Params Using Maps'
 date: 2016-02-18T00:00:34+00:00
 author: Levi Hackwith
 layout: post
+code: true
 categories:
   - Programming / Web Development
 tags:
