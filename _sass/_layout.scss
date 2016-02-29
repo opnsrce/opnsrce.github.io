@@ -1,15 +1,22 @@
-.site {
-	font-size: 1.6rem;
-	color: $text-color;
-}
-
 .home-page {
 	@include grid();
+	@media(max-width: $bp-large) {
+		margin-left: $page-gutter;
+		margin-right: $page-gutter;
+	}
 	&__post-list {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		.post {
+			@include animation(fadeIn .5s ease-in, 1);
+			@include animation-fill-mode(forwards);
+			@for $i from 1 through 20 {
+				&:nth-of-type(#{$i}) {
+					@include animation-delay($i * .1s);
+				}
+			}
+			opacity: 0;
 			padding: 20px 10px 20px 10px;
 			margin: 20px 0 0 0;
 			background: $post-bg-color;

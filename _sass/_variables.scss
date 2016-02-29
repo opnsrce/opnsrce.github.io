@@ -10,12 +10,12 @@ $grey-color:       rgb(130,130,130);
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 $post-bg-color:    lighten($grey-color, 45%);
-$spacing-unit:     30px;
+$page-gutter:      20px;
 
 //
 // Breakpoints
 //
-$bp-large: 2000px;
+$bp-large: 960px;
 $bp-medium: 645px;
 $bp-small: 430px;
 ////
@@ -35,5 +35,5 @@ $bp-small: 430px;
 }
 
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: (30px / 2);
 }

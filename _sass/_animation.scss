@@ -1,0 +1,16 @@
+@include keyframes(fadeIn) {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+@include keyframes(animateLink) {
+	from {
+		border-bottom: solid 1px transparent;
+	}
+	to {
+		border-bottom: solid 4px $grey-color;
+	}
+}

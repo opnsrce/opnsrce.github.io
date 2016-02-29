@@ -3,12 +3,83 @@
 ---
 @charset "utf-8";
 
+//////////////////////////////
 //
 // Third-party SASS files
 //
 @import 'third-party/_grid';
+@import  'third-party/bourbon/_bourbon';
+//////////////////////////////
+
 @import 'variables';
+@import 'animation';
 @import 'base';
-@import 'header';
-@import 'footer';
 @import 'layout';
+
+//
+// Global Styles
+//
+.site {
+	font-size: 1.6rem;
+	&__title {
+		color: $text-color;
+		color: inherit;
+		float: left;
+		font-size: 2rem;
+		position: relative;
+		text-decoration: none;
+	}
+	&__header {
+		@extend %clearfix;
+		background-color: inherit;
+		border-bottom: solid 1px $grey-color-light;
+		margin-bottom: 20px;
+		padding: 20px 0 20px 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000000;
+	}
+
+	&__header-content {
+		@include grid();
+		@media(max-width: $bp-large) {
+			padding-right: $page-gutter;
+			padding-left: $page-gutter;
+		}
+	}
+	&__nav {
+		float: right;
+		text-align: right;
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				@include animation(animateLink .1s ease-in, 1);
+				@include animation-fill-mode(forwards);
+				border-bottom: solid 1px transparent;
+			}
+		}
+	}
+	&__footer {
+		@extend %clearfix;
+		background-color: inherit;
+		border-top: solid 1px $grey-color-light;
+		padding: 20px 0 20px 0;
+		text-align: right;
+		color: $grey-color;
+		font-style: italic;
+	}
+	&__footer-content {
+		@include grid();
+		@media(max-width: $bp-large) {
+			padding-right: $page-gutter;
+			padding-left: $page-gutter;
+		}
+	}
+}
+
+.page-content {
+	position: relative;
+	padding-top: 80px;
+}
