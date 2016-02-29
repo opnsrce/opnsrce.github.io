@@ -39,4 +39,7 @@
 
 .post-page {
 	@include grid();
+	opacity: 0;
+	@include animation(fadeIn .5s ease-in, 1);
+	@include animation-fill-mode(forwards);
 }
