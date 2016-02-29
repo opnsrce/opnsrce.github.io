@@ -1,9 +1,5 @@
 .home-page {
 	@include grid();
-	@media(max-width: $bp-large) {
-		margin-left: $page-gutter;
-		margin-right: $page-gutter;
-	}
 	&__post-list {
 		list-style-type: none;
 		margin: 0;

@@ -82,4 +82,8 @@
 .page-content {
 	position: relative;
 	padding-top: 80px;
+	@media(max-width: $bp-large) {
+		padding-right: $page-gutter;
+		padding-left: $page-gutter;
+	}
 }
