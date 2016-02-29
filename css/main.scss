@@ -20,7 +20,8 @@
 // Global Styles
 //
 .site {
-	font-size: 1.6rem;
+	font-size: 2.1rem;
+	line-height: $base-line-height;
 	&__title {
 		color: $text-color;
 		color: inherit;

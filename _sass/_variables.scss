@@ -1,16 +1,20 @@
 //
 // Page Variables
 //
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   10px;
-$base-font-weight: normal;
-$base-line-height: 1.5;
-$text-color:       rgb(17,17,17);
-$grey-color:       rgb(130,130,130);
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$post-bg-color:    lighten($grey-color, 45%);
-$page-gutter:      20px;
+$base-font-family:      'Lato', sans-serif;
+$base-font-size:        10px;
+$base-font-weight:      normal;
+$base-line-height:      1.5;
+$code-font-size:        1.6rem;
+$code-line-height:      1.6;
+$global-font-size:      2.1rem;
+$grey-color:            rgb(130,130,130);
+$grey-color-dark:       darken($grey-color, 25%);
+$grey-color-light:      lighten($grey-color, 40%);
+$page-gutter:           20px;
+$post-bg-color:         lighten($grey-color, 45%);
+$spacing:               30px;
+$text-color:            rgb(17,17,17);
 
 //
 // Breakpoints
@@ -35,5 +39,5 @@ $bp-small: 430px;
 }
 
 %vertical-rhythm {
-    margin-bottom: (30px / 2);
+    margin-bottom: ($spacing / 2);
 }

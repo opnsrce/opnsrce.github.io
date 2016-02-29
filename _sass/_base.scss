@@ -17,12 +17,13 @@ body {
     position: relative;
     font-family: $base-font-family;
     background-color: #fdfdfd;
-    line-height: 2.2rem;
+    line-height: $base-line-height;
 }
 
 pre,
 code {
-    font-size: 15px;
+    font-size: $code-font-size;
+    line-height: $code-line-height;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
@@ -45,13 +46,16 @@ pre {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: 30px / 2;
-    font-size: 18px;
+    padding-left: $spacing / 2;
+    font-size: $global-font-size;
     letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
     }
+}
+h1,
+h2 {
 }
 ////

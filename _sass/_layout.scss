@@ -13,14 +13,13 @@
 				}
 			}
 			opacity: 0;
-			padding: 20px 10px 20px 10px;
-			margin: 20px 0 0 0;
+			padding: $page-gutter ($page-gutter / 2);
+			margin: $page-gutter 0 0 0;
 			background: $post-bg-color;
 			border: solid 1px $grey-color-light;
 			.title {
-				margin: 10px 0 0 0;
+				margin: ($page-gutter / 2) 0 0 0;
 				padding: 0;
-				line-height: 3rem;
 			}
 			.date {
 				color: $grey-color-dark;
