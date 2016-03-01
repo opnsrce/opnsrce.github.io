@@ -3,8 +3,12 @@ title: 'Create an Archives Page in Jekyll Without Using Plugins'
 date: 2016-02-27T00:00:34+00:00
 author: Levi Hackwith
 layout: post
+excerpt: 'Recently, I wanted to add an “Archives” to my site. While this can be
+easily done via a number of Jekyll plugins, Github pages (my site&rsquo;s host)
+doesn’t allow custom plugins on their platform and won’t be adding an archives
+feature anytime soon. However, I did some experimenting and came up with a way
+to create a simple Archives page without using plugins.'
 code: true
-permalink: /create-an-archives-page-jekyll-without-using-plugins/
 categories:
   - Programming / Web Development
 tags:

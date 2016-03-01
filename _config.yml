@@ -9,3 +9,4 @@ sass:
     style: compressed
 pagination: 20
 permalink: /:slug
+excerpt_separator: ""

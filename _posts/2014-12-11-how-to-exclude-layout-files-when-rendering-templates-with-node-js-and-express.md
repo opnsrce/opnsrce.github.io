@@ -3,8 +3,11 @@ title: How to Exclude Layout Files When Rendering Templates With Node.js and Exp
 date: 2014-12-11T21:42:57+00:00
 author: Levi Hackwith
 layout: post
-icy_video_embed_code:
-  -
+excerpt: 'I struggled with this for a good half-hour and I figured I&rsquo;d
+share in case anyone else ran into this issue. Long story short, I needed to
+return an HTML fragment for a particular ajax request from the app (in this
+case, search results) but the response always included the layout file I
+configured for the app.'
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -19,7 +22,7 @@ case anyone else ran into this issue. Long story short, I needed to return an
 HTML fragment for a particular ajax request from the app (in this case, search
 results) but the response always included the layout file I configured for the
 app:
-<!--more-->
+
 ~~~js
 hbsEngine = expressHbs.create({
   extname: 'hbs',

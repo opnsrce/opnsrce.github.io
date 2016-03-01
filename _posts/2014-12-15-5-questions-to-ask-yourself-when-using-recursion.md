@@ -3,8 +3,11 @@ title: 5 Questions to Ask Yourself When Using Recursion
 date: 2014-12-15T22:06:13+00:00
 author: Levi Hackwith
 layout: post
-icy_video_embed_code:
-  -
+excerpt: 'Recursion can be a tough concept to grasp regardless of the language
+you decided to program in. In order to help developers who find themselves
+struggling with the concept (myself included), I&rsquo;ve broken down the
+concept into five simple questions you&rsquo;ll need to answer in order to
+write solid recursive functions.'
 categories:
   - Programming / Web Development
   - Uncategorized

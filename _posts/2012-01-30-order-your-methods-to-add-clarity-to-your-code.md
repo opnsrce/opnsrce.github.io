@@ -2,10 +2,6 @@
 title: Order Your Methods to Add Clarity to Your Code
 date: 2012-01-30T00:00:39+00:00
 author: Levi Hackwith
-excerpt: 'In general we want function call dependencies to point in the
-downward direction. That is, a function that is called should be below a
-function that does the calling.2This creates a nice flow down the source code
-module from high level to low level.'
 code: true
 layout: post
 categories:

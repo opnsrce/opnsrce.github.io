@@ -3,6 +3,9 @@ title: Using Handlebars Templates With Backbone and Browserify
 date: 2014-12-20T21:33:51+00:00
 author: Levi Hackwith
 layout: post
+excerpt: 'While working on a recent side-project, I ran into some trouble
+implementing Handlebars templates for my use in my backbone views when using
+Browserify for my dependency management.'
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -17,7 +20,7 @@ tags:
 While working on a recent [side-project][1], I ran into some trouble
 implementing Handlebars templates for my use in my backbone views when using
 Browserify for my dependency management.
-<!--more-->
+
 If you&rsquo;ve run into similar issues, here&rsquo;s a quick breakdown of
 what you&rsquo;ll need to do to get up and running again:
 

@@ -3,6 +3,9 @@ title: Formatting Dates Using Moment.js, Handlebars, Express, and Node.js
 date: 2014-12-08T00:00:26+00:00
 author: Levi Hackwith
 layout: post
+excerpt: 'For those of you out there that may be struggling with this,
+here&rsquo;s a quick breakdown of how to format dates using moment.js,
+handlebars, express, and node.js.'
 categories:
     - Code Snippets
     - Programming / Web Development
@@ -26,7 +29,6 @@ your express app:
 
 Once you&rsquo;ve included these packages in your ``app.js`` file, you&rsquo;ll
 need to set up handlebars like so:
-<!--more-->
 
 ~~~js
 ...

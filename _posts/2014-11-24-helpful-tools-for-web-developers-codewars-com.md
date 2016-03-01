@@ -3,6 +3,9 @@ title: 'Helpful Tools For Web Developers: CodeWars.com'
 date: 2014-11-24T00:00:23+00:00
 author: Levi Hackwith
 layout: post
+excerpt: 'The ability to solve new problems efficiently is the hallmark of a
+good developer. When interviewing dev candidates, I don&rsquo;t necessarily look
+for their experience with a particular framework or API.'
 categories:
   - Programming / Web Development
   - Tools
@@ -21,12 +24,11 @@ The ability to solve new problems efficiently is the hallmark of a good
 developer. When interviewing dev candidates, I don&rsquo;t necessarily look
 for their experience with a particular framework or API. Most of the time,
 I&rsquo;m looking at how they go about approaching a problem they&rsquo;ve
-(most likely) never seen before. <!--more-->
-You&rsquo;ve probably encountered questions like &rdquo;write a function that
-finds x number in the [Fibonacci sequence][1] or the ubiquitous [FizzBuzz][2]
-puzzle. These questions and others like it are designed to give the interviewer
-insight into how youthink about a problem and the kinds of solutions
-you&rsquo;ll come up with.
+(most likely) never seen before. You&rsquo;ve probably encountered questions
+like &rdquo;write a function that finds x number in the [Fibonacci sequence][1]
+or the ubiquitous [FizzBuzz][2] puzzle. These questions and others like it are
+designed to give the interviewer insight into how youthink about a problem and
+the kinds of solutions you&rsquo;ll come up with.
 
 As a developer, the frustrating part about being judged on my problem solving
 skills is that I find such skills difficult to improve. Problem solving is a

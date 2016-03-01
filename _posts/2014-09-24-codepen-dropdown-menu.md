@@ -3,8 +3,8 @@ title: 'CodePen: Dropdown Menu'
 date: 2014-09-24T00:00:26+00:00
 author: Levi Hackwith
 layout: post
-icy_video_embed_code:
-  -
+excerpt: 'I made a simple, static dropdown menu widget that&rsquo;s meant to
+act as a template for dropdowns you need to create.'
 categories:
   - Code Snippets
   - Programming / Web Development

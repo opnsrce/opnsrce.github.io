@@ -4,6 +4,10 @@ date: 2014-12-28T22:58:02+00:00
 author: Levi Hackwith
 code: true
 layout: post
+excerpt: 'Recently, I started using Backbone with to build an app.
+As I started integrating an &ldquo;edit&rdquo; feature I ran into a rather
+vexing problem: my $oid fields kept getting converted to strings whenever
+I updated a document.'
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -19,7 +23,7 @@ tags:
 
 Recently, I started using Backbone with [MongoDB][1] to build an app. As I
 started integrating an &ldquo;edit&rdquo; feature I ran into a rather vexing
-problem: my `$oid` fields kept getting converted to strings whenever I updated
+problem: my ``$oid`` fields kept getting converted to strings whenever I updated
 a document. This caused all manor of havoc with my queries: Data wasn&rsquo;t
 getting returned properly, results sets were empty, pages crashed because of
 ``null`` values, etc. Unfortunately, after doing a bunch of research, the best

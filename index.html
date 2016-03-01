@@ -11,6 +11,10 @@ layout: default
             <h2 class="title">
                 <a class="link" href="{{ post.url }}">{{ post.title }}</a>
             </h2>
+            {% if post.excerpt | size > 0 %}
+            <p class = "excerpt">{{ post.excerpt }} </p>
+            <a class="link" href="{{ post.url }}">Read More</a>
+            {% endif %}
         </li>
         {% endfor %}
     </ol>

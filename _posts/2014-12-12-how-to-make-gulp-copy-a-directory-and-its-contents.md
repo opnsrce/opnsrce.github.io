@@ -3,10 +3,10 @@ title: How to Make Gulp Copy a Directory AND Its Contents
 date: 2014-12-12T22:43:06+00:00
 author: Levi Hackwith
 layout: post
-icy_video_embed_code:
-  -
-dsq_thread_id:
-  - 4586109293
+excerpt: 'I just got done switching one of my side-projects over to Gulp for
+the build process and I kept struggling with how to copy multiple folders from
+the src directory to the build directory in such a way that the
+directory&rsquo;s contents and its original folder structure are preserved.'
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -22,7 +22,7 @@ the build process and I kept struggling with how to copy multiple folders from
 the ``src`` directory to the ``build`` directory in such a way that the
 directory&rsquo;s contents _and_ its original folder structure are preserved.
 Basically, I was trying to achieve this:
-<!--more-->
+
 ~~~
 src // Copy everything under src
   ->public

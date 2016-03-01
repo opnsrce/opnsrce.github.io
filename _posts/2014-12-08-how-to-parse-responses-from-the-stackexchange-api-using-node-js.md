@@ -3,6 +3,8 @@ title: How to Parse Responses From the StackExchange API Using Node.js
 date: 2014-12-08T18:13:01+00:00
 author: Levi Hackwith
 layout: post
+excerpt: 'Currently, I&rsquo;m working on a small side project that involves
+parsing the wiki entries for given tags on StackOverflow.'
 categories:
   - Code Snippets
   - Programming / Web Development
@@ -24,7 +26,6 @@ of boring detail, the task I was trying to complete can be broken down thusly:
   2. Show that data in a Handlebars template
   3. Profit
 
-<!--more-->
 When I first started tackling this problem, I assumed you consume the API just
 like any other: using AJAX or the ``request`` node package. However, when I
 started making requests of the API, I kept getting back binary data instead of

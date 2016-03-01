@@ -4,6 +4,10 @@ date: 2016-02-18T00:00:34+00:00
 author: Levi Hackwith
 layout: post
 code: true
+excerpt: 'Mixins in Sass are great for dynamically generating CSS properties
+based on passed in variables. What you might not realize is how can use another
+feature of SASS &mdash; maps to add greater flexibility to what kind of
+parameters your mixins accept.'
 categories:
   - Programming / Web Development
 tags:
