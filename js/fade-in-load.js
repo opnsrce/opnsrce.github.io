@@ -26,6 +26,7 @@
 						content = div.getElementsByClassName('post-page')[0];
 						homePage.innerHTML = content.innerHTML;
 						homePage.classList.add('fade-in');
+						window.scrollTo(0, 0);
 
 					},
 					error: function(response) {
