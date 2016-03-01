@@ -2,14 +2,19 @@
 layout: default
 ---
 
-<div class="home-page">
+<div class="home-page" id="home-page">
     <h1 class="home-page__title">Posts</h1>
-    <ol class="home-page__post-list">
+    <ol class="home-page__post-list" id="home-page__post-list">
         {% for post in site.posts limit: site.pagination %}
         <li class="post">
             <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h2 class="title">
-                <a class="link" href="{{ post.url }}">{{ post.title }}</a>
+                <a
+                    class="link"
+                    href="{{ post.url }}"
+                    title="{{ post.title }}">
+                        {{ post.title }}
+                </a>
             </h2>
             {% if post.excerpt | size > 0 %}
             <p class = "excerpt">{{ post.excerpt }} </p>

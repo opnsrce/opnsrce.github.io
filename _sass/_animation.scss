@@ -14,3 +14,8 @@
 		border-bottom: solid 4px $grey-color;
 	}
 }
+
+.fade-in {
+	@include animation(fadeIn .5s ease-in, 1);
+	@include animation-fill-mode(forwards);
+}
