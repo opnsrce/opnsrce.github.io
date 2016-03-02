@@ -5,7 +5,7 @@ layout: default
 
 <div class="home-page">
     <h1 class="home-page__title">{{ page.title }}</h1>
-    <ol class="home-page__post-list">
+    <ol class="home-page__post-list" id="home_page__post-list">
         {% for post in site.posts offset: site.pagination + 1 %}
         <li class="post">
             <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
