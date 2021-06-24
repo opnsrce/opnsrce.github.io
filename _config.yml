@@ -1,0 +1,16 @@
+url: http://www.levihackwith.com
+name: Levihackwith.com
+title: LeviHackwith.com
+description: Ship Now. Iterate Later.
+excerpt_separator: <!--more-->
+sass:
+    style: compressed
+pagination: 20
+permalink: /:slug
+excerpt_separator: ""
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

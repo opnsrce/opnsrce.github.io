@@ -1,0 +1,62 @@
+---
+title: JavaScript Bitwise AND Operator Tutorial
+excerpt: |
+    The bitwise AND operator (&) returns a 1 in each bit position for which the 
+    corresponding bits of both operands [numbers] are 1s. But what does this 
+    mean in plain English? Let&#8217;s find out.
+tags:
+  - bitwise operators
+---
+
+{%- capture mdn -%}
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND
+{%- endcapture -%}
+
+{%- capture quote -%}
+The bitwise AND operator (&) returns a 1 in each bit position for
+which the corresponding bits of both operands [numbers] are 1s.
+{%- endcapture -%}
+
+{%-capture snippet1 -%}
+2: 00000010
+3: 00000011
+===========
+2: 00000010    
+{%- endcapture -%}
+
+{%- capture snippet2 -%}
+5: 00000101
+8: 00001000
+===========
+{%- endcapture -%}
+
+<p>
+    From <a href="{{mdn}}">MDN:</a>
+    {%-include quote.html quote=quote -%}
+</p>
+
+<p>
+    So, what does this mean in plain English? Let&#8217;s break it down with an 
+    example:
+
+    {%- include replit.html url="@opnsrce/Bitwise-Operator-AND" -%}
+</p>
+
+<p>Take a look at the output of this node script:</p>
+
+
+{%- include code-snippet.html code=snippet1 language="plaintext"-%}
+
+<p>
+    Notice how every bit that is a 1 in both numbers becomes a 1 in the final
+    result. But if neither bit is a 1 or only one of the bits in either number
+    is a 1, the corresponding bit in the final result is a 0. That&#8217;s how
+    the bitwise AND operator works. Let&#8217;s try another example:
+</p>
+
+{%- include code-snippet.html code=snippet2 language="plaintext" -%}
+
+<p>
+    Given what you&#8217;ve just learned about bitwise AND, what should the
+    result be? Use the node program above to confirm your answer.
+</p>
