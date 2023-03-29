@@ -1,0 +1,6 @@
+{
+	"name": "Opnsrce Github",
+	"dockerComposeFile": "../docker-compose.yaml",
+	"service": "jekyll",
+	"workspaceFolder": "/workspace"
+}
