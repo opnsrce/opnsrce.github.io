@@ -1,0 +1,52 @@
+{
+    "baseURL": "https://opnsrce.github.io",
+    "buildDrafts": false,
+    "buildFuture": false,
+    "languageCode": "en-us",
+    "mainSections": ["blog"],
+    "markup": {
+        "goldmark": {
+            "extensions": {
+                "typographer": true
+            }
+        }
+    },
+    "menu": {
+        "main": [
+            {
+                "identifier": "blog",
+                "name": "Blog",
+                "url": "/blog/"
+            },
+            {
+                "identifier": "about",
+                "name": "About",
+                "url": "/about/"
+            }
+        ]
+    },
+    "outputs": {
+        "home": ["HTML"]
+    },
+    "pagination": {
+        "pagerSize": 10
+    },
+    "params": {
+        "ShowBreadCrumbs": true,
+        "ShowReadingTime": true,
+        "ShowShareButtons": false,
+        "author": "Levi Hackwith",
+        "defaultTheme": "auto",
+        "disableComments": true,
+        "disableSpecial1stPost": true,
+        "hideMeta": false
+    },
+    "taxonomies": {
+        "series": "series",
+        "tag": "tags",
+        "tech": "tech"
+    },
+    "theme": "PaperMod",
+    "timeZone": "UTC",
+    "title": "Levi Hackwith"
+}

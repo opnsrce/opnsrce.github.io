@@ -1,0 +1,28 @@
+{
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ["**/.*rc"],
+      "options": {
+        "parser": "json",
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["./*.yaml", "./**/*.yaml", "./*.yml", "./**/*.yml"],
+      "options": {
+        "parser": "yaml",
+        "printWidth": 200,
+        "tabWidth": 2
+      }
+    }
+  ],
+  "printWidth": 80,
+  "proseWrap": "always",
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 4,
+  "trailingComma": "none",
+  "useTabs": false
+}
