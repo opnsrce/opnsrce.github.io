@@ -1,0 +1,42 @@
+{
+    "name": "LeviHackwith.com",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind",
+    "workspaceFolder": "/workspaces",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "github.vscode-github-actions",
+                "golang.go",
+                "PascalReitermann93.vscode-yaml-sort",
+                "richie5um2.vscode-sort-json",
+                "shd101wyy.markdown-preview-enhanced",
+                "streetsidesoftware.code-spell-checker",
+                "yzhang.markdown-all-in-one"
+            ],
+            "settings": {
+                "editor.wordWrap": "on",
+                "editor.rulers": [
+                    80
+                ],
+                "files.insertFinalNewline": true,
+                "git.inputValidationSubjectLength": 54,
+                "git.inputValidation": true,
+                "[git-commit]": {
+                    "editor.rulers": [
+                        54,
+                        72
+                    ],
+                    "editor.wordWrap": "wordWrapColumn",
+                    "editor.wordWrapColumn": 72
+                }
+            }
+        }
+    },
+    "postCreateCommand": "npm ci || npm install && npx husky"
+}

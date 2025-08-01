@@ -1,0 +1,7 @@
+.git/
+*.md
+node_modules/
+package-lock.json
+public/
+resources/
+themes/
