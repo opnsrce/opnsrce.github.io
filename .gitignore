@@ -1,0 +1,10 @@
+# Hugo runtime lock
+.hugo_build.lock
+# Hugo generated resources (cache, image processing)
+resources/_gen/
+# OS-specific
+.DS_Store
+# Node/npm caches (tools only, not runtime deps)
+node_modules/
+# Hugo publishing folder
+public

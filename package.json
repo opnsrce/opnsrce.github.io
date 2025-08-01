@@ -1,0 +1,23 @@
+{
+    "name": "opnsrce-site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "npx husky",
+        "format": "prettier --write '**/*.{md,json,js,yml,yaml}'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@gh_opnsrce:opnsrce/opnsrce.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
+        "husky": "^9.1.7",
+        "prettier": "^3.3.3"
+    }
+}
