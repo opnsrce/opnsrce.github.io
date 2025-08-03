@@ -1,7 +1,7 @@
 # LeviHackwith.com
 
-Personal blog and knowledge site built with [Hugo][1] and the [PaperMod][2] (aka
-PaperDoc) theme. Hosted on GitHub Pages. No analytics, no comments, no
+Personal blog and knowledge site built with [Hugo][01] and the [PaperMod][02]
+(aka PaperDoc) theme. Hosted on GitHub Pages. No analytics, no comments, no
 unnecessary extras.
 
 This is just me yelling into HTML about whatever I’m thinking and leaving my
@@ -12,7 +12,7 @@ notes lying around.
 This repo is configured to run in a VS Code devcontainer with Docker.
 
 ```bash
-# Clone repo
+# Clone repo (directory name is optional)
 git clone git@github.com:opnsrce/opnsrce.github.io.git levihackwithcom
 cd levihackwithcom
 
@@ -26,23 +26,18 @@ hugo server -D
 hugo --gc --minify
 ```
 
-### Manual Docker Commands
+### VS Code: Open Folder in Devcontainer
 
-If you're not using VS Code's devcontainer integration, you can build and run
-the Docker image directly:
+If you have Docker and the [Dev Containers extension][10] installed,
+VS Code will prompt you to reopen the project in a container. Confirm the prompt
+and VSCode will launch the prebuilt Docker devcontainer with Hugo and other
+dependencies already installed.
 
-```bash
-# Build the Docker image
-docker build -t levihackwithcom .
+If VSCode doesn't prompt you, you can pull up the command pallete
+(`Cmd/Ctrl+Shift+P`) and run `Dev Containers: Open Folder in Container`
+manually.
 
-# Run a container interactively, mounting the current dir
-docker run --rm -it -v $(pwd):/workspaces/levihackwithcom -p 1313:1313 levihackwithcom /bin/bash
-
-# Inside the container:
-hugo server -D --bind 0.0.0.0
-```
-
-View the site locally at http://localhost:1313
+View the site via [localhost][11].
 
 ## Content Structure
 
@@ -60,52 +55,33 @@ Markdown files follow 80-char wrap (120 for code) enforced via linting.
 
 ## Deployment
 
-[![Deploy Hugo site][8]][9]
+[![Deploy Hugo site][08]][09]
 
-This site uses a two-branch setup for deployment:
+This site is deployed via GitHub Actions:
 
-- **`master`** → Hugo source content, theme, and configuration.
-- **`gh-pages`** → auto-generated static site, deployed via GitHub Actions.
-
-GitHub Pages serves the `gh-pages` branch at [levihackwith.com][4]. This keeps
-the build artifacts separate from the source.
-
-### Manual Deployment (legacy)
-
-Previously, deployment was manual via:
-
-```bash
-hugo --gc --minify
-git subtree push --prefix public origin gh-pages
-```
-
-### Current Deployment
-
-Now automated via GitHub Actions:
-
-- Push to `master` triggers a build and deploy to `gh-pages`.
-- Custom domain: [levihackwith.com][4]
+- Push to `master` triggers an automated build and deploy via GitHub Actions.
 
 ## Contributing
 
  This repo is solo-maintained but enforces commit & lint standards:
 
-- Commits follow [Conventional Commits][3]
+- Commits follow [Conventional Commits][03]
   (`CONTRIBUTIONS.md` has details).
-- Code linting is enforced with [Prettier][6].
-- Markdown linting is enforced with [markdownlint][7].
+- Code linting is enforced with [Prettier][06].
+- Markdown linting is enforced with [markdownlint][07].
 - Husky hooks enforce commit linting and run a Hugo build on push.
 
 ## License
 
-This project is licensed under the [MIT License][5].
+This project is licensed under the [MIT License][05].
 
-[1]: https://gohugo.io/
-[2]: https://github.com/adityatelange/hugo-PaperDoc
-[3]: https://www.conventionalcommits.org/
-[4]: https://levihackwith.com/
-[5]: LICENSE
-[6]: https://prettier.io/
-[7]: https://github.com/DavidAnson/markdownlint
-[8]: https://github.com/opnsrce/opnsrce-site/actions/workflows/deploy.yml/badge.svg
-[9]: https://github.com/opnsrce/opnsrce-site/actions/workflows/deploy.yml
+[01]: https://gohugo.io/
+[02]: https://github.com/adityatelange/hugo-PaperDoc
+[03]: https://www.conventionalcommits.org/
+[05]: LICENSE
+[06]: https://prettier.io/
+[07]: https://github.com/DavidAnson/markdownlint
+[08]: https://github.com/opnsrce/opnsrce.github.io/actions/workflows/deploy.yml/badge.svg
+[09]: https://github.com/opnsrce/opnsrce.github.io/actions/workflows/deploy.yml
+[10]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[11]: http://localhost:1313
