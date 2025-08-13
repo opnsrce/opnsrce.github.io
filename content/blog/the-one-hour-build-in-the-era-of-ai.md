@@ -4,7 +4,6 @@ date: 2025-08-13
 description: |
     When code really breaks (and it will), you can't fix it with a
     prompt.
-draft: false
 summary: |
   Twelve years ago, I built the One Hour Build repo to improve how I think
   about code. Now that AI can crank out code in minutes, it's worth
