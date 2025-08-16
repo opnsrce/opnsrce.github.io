@@ -1,15 +1,15 @@
 # Contribution Guidelines
 
-## Commit Standards
+## Commit standards
 
 This project follows version `1.0.0` of the [Conventional Commits Standard][01].
 
-The key words "**MUST**", "**MUST NOT**", **"REQUIRED"**, **"SHALL"**, "**SHALL
-NOT**", "**SHOULD"**, "**SHOULD NOT**", "**RECOMMENDED**", "**MAY**", and
-"**OPTIONAL**" in this document are to be interpreted as described in [RFC
+The key words "**MUST**", "**MUST NOT**", "**REQUIRED**", "**SHALL**",
+"**SHALL NOT**", "**SHOULD**", "**SHOULD NOT**", "**RECOMMENDED**", "**MAY**",
+and "**OPTIONAL**" in this document are to be interpreted as described in [RFC
 2119][02].
 
-### Commit Prefix
+### Commit prefix
 
 - Commits **MUST** use one of the following fixed set of **types**:
 - `feat` - a new feature is introduced with the changes
@@ -98,20 +98,21 @@ Commit messages **MUST** follow these rules:
   requests using tokens (e.g., `Closes #123`).
 - The commit body **MAY** briefly summarize what was changed if it is not clear
   from the prefix and description.
-- Commits introducing fixes or features **SHOULD** note their user-facing impact
+- Commits introducing fixes or features **SHOULD** note their user-facing
+  impact.
 - All explanatory text in the body **MUST** follow the line length rules.
 - Multi-paragraph commit bodies **SHOULD** be used to separate different
   concerns. For example, one paragraph for motivation or context and a
   subsequent paragraph for the effect or outcome of the changes.
 
-### Example Commits
+### Example commits
 
 ```text
 fix(parser): handle null values in config files
 
 Previously, parsing config files with null values caused a runtime
-error during application startup. This commit updates the parser
-to safely handle null values, preventing crashes.
+error during application startup. This commit updates the parser to
+safely handle null values, preventing crashes.
 
 This change was made to fix a critical bug that disrupted config
 loading. It was needed because multiple production incidents were
@@ -142,7 +143,7 @@ been removed. Clients using them will fail until migrated to the new
 API.
 ```
 
-## Content and File Naming Conventions
+## Content and file naming conventions
 
 ### Blog Post Filenames
 
@@ -169,16 +170,16 @@ Hugo uses the `date:` field in frontmatter as the canonical publish date.
 
 To maintain consistency, use the following vocabulary for tags where applicable:
 
-- `docker` - containerization and Docker-specific topics
-- `containers` - containerization concepts (non-Docker specific)
-- `kubernetes` - orchestration
-- `hugo` - Hugo static site generator
-- `go` - Go programming language
-- `python` - Python programming language
-- `javascript` - JavaScript language and ecosystem
-- `ci` - continuous integration practices or tools
-- `devops` - DevOps workflows and culture
-- `git` - version control with Git
+- `docker` -- containerization and Docker-specific topics
+- `containers` -- containerization concepts (non-Docker specific)
+- `kubernetes` -- orchestration
+- `hugo` -- Hugo static site generator
+- `go` -- Go programming language
+- `python` -- Python programming language
+- `javascript` -- JavaScript language and ecosystem
+- `ci` -- continuous integration practices or tools
+- `devops` -- DevOps workflows and culture
+- `git` -- version control with Git
 
 In addition to tags:
 
@@ -186,5 +187,47 @@ In addition to tags:
   to the post. Incidental mentions of tools **MUST NOT** be added to `tech`.
 - Use `series` only when chaining multipart posts.
 
+## Writing and formatting standards
+
+We follow the *Chicago Manual of Style* [17th edition][03] for grammar,
+punctuation, and usage.
+
+The following rules are the most relevant for our writing:
+
+- **Oxford comma**: Always use it. (“coffee, toast, and eggs”)
+- **Em dashes**: Use em dashes without spaces. (“like this—not like this”)
+- **Periods and commas inside quotes**: Always place them inside. (“like this.”)
+- **Headings**: Sentence case, not Title Case.
+- **Italics vs. quotation marks**:
+  - Titles of books, journals, and websites: *italics*
+  - Titles of articles, chapters, and pages: “quotation marks”
+
+When in doubt, follow *Chicago Manual of Style* unless explicitly overridden
+below.
+
+## Typography in source files
+
+Hugo automatically converts plain ASCII characters into proper typographic
+marks. Always type straight quotes and plain hyphens in your source---Hugo
+will render the curly/typographic equivalents.
+
+Here’s the mapping:
+
+| Character            | Type in source |
+|----------------------|----------------|
+| Em dash              | `---`          |
+| En dash              | `--`           |
+| Hyphen               | `-`            |
+| Opening double quote | `"`            |
+| Closing double quote | `"`            |
+| Opening single quote | `'`            |
+| Closing single quote | `'`            |
+| Apostrophe           | `'`            |
+| Ellipsis             | `...`          |
+
+Do **not** type curly quotes, smart apostrophes, or em dashes manually---Hugo
+will double-convert them.
+
 [01]: https://www.conventionalcommits.org/en/v1.0.0/#specification
 [02]: https://www.ietf.org/rfc/rfc2119.txt
+[03]: https://www.chicagomanualofstyle.org/home.html
