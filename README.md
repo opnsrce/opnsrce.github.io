@@ -7,7 +7,7 @@ unnecessary extras.
 This is just me yelling into HTML about whatever I’m thinking and leaving my
 notes lying around.
 
-## Quick Start (Devcontainer)
+## Quick start (devcontainer)
 
 This repo is configured to run in a VS Code devcontainer with Docker.
 
@@ -26,20 +26,20 @@ hugo server -D
 hugo --gc --minify
 ```
 
-### VS Code: Open Folder in Devcontainer
+### VS Code: open folder in devcontainer
 
 If you have Docker and the [Dev Containers extension][10] installed,
 VS Code will prompt you to reopen the project in a container. Confirm the prompt
-and VSCode will launch the prebuilt Docker devcontainer with Hugo and other
+and VS Code will launch the prebuilt Docker devcontainer with Hugo and other
 dependencies already installed.
 
-If VSCode doesn't prompt you, you can pull up the command pallete
+If VS Code doesn't prompt you, you can pull up the command pallete
 (`Cmd/Ctrl+Shift+P`) and run `Dev Containers: Open Folder in Container`
 manually.
 
 View the site via [localhost][11].
 
-## Content Structure
+## Content structure
 
 Content lives in `/content/` and is split into:
 
@@ -63,7 +63,7 @@ This site is deployed via GitHub Actions:
 
 ## Contributing
 
- This repo is solo-maintained but enforces commit & lint standards:
+This repo is solo-maintained but enforces commit & lint standards:
 
 - Commits follow [Conventional Commits][03]
   (`CONTRIBUTIONS.md` has details).
