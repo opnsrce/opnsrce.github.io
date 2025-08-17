@@ -32,6 +32,9 @@
         "pagerSize": 10
     },
     "params": {
+        "cover": {
+            "responsiveImages": true
+        },
         "ShowBreadCrumbs": true,
         "ShowReadingTime": true,
         "ShowShareButtons": false,
