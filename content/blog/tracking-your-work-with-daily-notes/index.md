@@ -1,5 +1,9 @@
 ---
-date: 2023-01-22
+cover:
+  alt: Laptop and monitor with countdown timer
+  caption: Photo by [Yucel Moran](https://unsplash.com/@ymoran) on Unsplash
+  image: cover.jpg
+date: 2023-01-22T00:00:00.000Z
 description: Stop trying to remember what you did last week.
 showtoc: true
 summary: |

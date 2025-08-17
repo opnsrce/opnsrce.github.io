@@ -1,4 +1,8 @@
 ---
+cover:
+  alt: The head of a human anatomy model with its brain exposed.
+  caption: Photo by [David Matos](https://unsplash.com/@davidmatos) on Unsplash
+  image: cover.jpg
 author: Levi Hackwith
 date: 2025-08-13
 description: |

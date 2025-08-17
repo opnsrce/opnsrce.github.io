@@ -1,6 +1,8 @@
 ---
 title: "About"
 draft: false
+cover:
+  hidden: true
 ---
 
 I'm a software engineer based out of Vancouver, WA.

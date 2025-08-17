@@ -1,5 +1,9 @@
 ---
-date: 2021-06-23
+cover:
+  alt: A pen, notebook, and glasses on a desk.
+  caption: Photo by [David Travis](https://unsplash.com/@dtravisphd) on Unsplash
+  image: cover.jpg
+date: 2021-06-23T00:00:00.000Z
 description: |
   Learn how a One Hour Build sharpens skills through focused, time-boxed
   projects.
