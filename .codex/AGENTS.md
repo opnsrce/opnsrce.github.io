@@ -16,7 +16,6 @@ safe, and minimal changes.
 
 - `content/blog/<slug>/index.md`: Write or update posts; keep images alongside.
 - `hugo.json`: Tweak menus, params, or theme config; justify changes in the PR.
-- `.devops/should_build.py`: Only adjust publish-time logic with rationale.
 - `.github/workflows/`: Edit only for deploy/build changes; coordinate in PRs.
 - `themes/PaperMod/`: Do not modify; prefer overrides via project `layouts/`.
 - `public/`: Never edit; it is generated output.
@@ -29,7 +28,6 @@ safe, and minimal changes.
 - `archetypes/`: Content templates.
 - `public/`: Hugo build output. Never edit.
 - `.github/workflows/`: CI and Pages deploy. Avoid changes unless requested.
-- `.devops/`: Helper scripts (e.g., publish time precheck).
 
 ## Build, test, and development commands
 
@@ -38,8 +36,7 @@ safe, and minimal changes.
 - `npm ci`: Install tools (husky, commitlint, prettier).
 - `npm run lint`: Apply Prettier to supported files.
 
-CI triggers on push to `master`. Scheduled builds only run when a post is due
-per `.devops/should_build.py` (UTC aware).
+CI runs on a daily schedule (00:05 UTC) and manual dispatch.
 
 ## Coding style and naming conventions
 
@@ -68,8 +65,9 @@ summary: "One or two sentences about the post."
 
 ## Scheduling posts
 
-- Use `publishDate` to control exact publish time; include timezone.
-- CI checks hourly at `:05` UTC and publishes if due.
+- Use `publishDate` to control publish timing; include timezone.
+- CI runs daily at `00:05` UTC; content publishes when `date`/`publishDate` is
+  in the past as of that build (UTC).
 - Date-only values publish at `00:00:00` UTC for that date.
 
 Example scheduled post:
