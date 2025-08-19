@@ -19,6 +19,11 @@
                 "url": "/blog/"
             },
             {
+                "identifier": "recipes",
+                "name": "Recipes",
+                "url": "/recipes/"
+            },            
+            {
                 "identifier": "about",
                 "name": "About",
                 "url": "/about/"
