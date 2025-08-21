@@ -201,6 +201,11 @@ The following rules are the most relevant for our writing:
 - **Italics vs. quotation marks**:
   - Titles of books, journals, and websites: *italics*
   - Titles of articles, chapters, and pages: “quotation marks”
+- **Fractions and Degrees**:
+  - Fractions should be expressed using HTML entities. For example 3/4 should be
+    &frac34;.
+  - The degree symbol should be expressed using HTML entities. For example, °
+    should be &deg;
 
 When in doubt, follow *Chicago Manual of Style* unless explicitly overridden
 below.
