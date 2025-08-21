@@ -1,0 +1,9 @@
+profile = "hugo_danger"
+
+[profiles.hugo_danger]
+approval_policy = "on-failure"
+hide_agent_reasoning = true
+model = "gpt-5"
+model_reasoning_summary = "none"
+sandbox_mode = "danger-full-access"
+working_directory = "/workspaces"

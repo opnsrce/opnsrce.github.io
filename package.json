@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "postinstall": "npx husky",
-        "lint": "prettier --write ."
+        "codex": "export CODEX_HOME=/workspaces/.codex && npx codex --dangerously-bypass-approvals-and-sandbox",
+        "lint": "prettier --write .",
+        "postinstall": "npx husky"
     },
     "repository": {
         "type": "git",

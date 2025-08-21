@@ -8,3 +8,7 @@ resources/_gen/
 node_modules/
 # Hugo publishing folder
 public
+
+.codex/*
+!.codex/config.toml
+!.codex/AGENTS.md
