@@ -1,6 +1,9 @@
 name: Deploy Hugo site (GitHub Actions Pages)
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '5 0 * * *' # daily at 00:05 UTC
   workflow_dispatch:
