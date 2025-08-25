@@ -6,8 +6,10 @@ cover:
 title: "Chocolate chip oatmeal cookies"
 date: 2025-08-21
 tags:
-  - cookies
-  - desserts
+  - cookie
+  - dessert
+  - chocolate
+  - oatmeal
 summary: "Classic chocolate chip oatmeal cookies."
 draft: false
 ---

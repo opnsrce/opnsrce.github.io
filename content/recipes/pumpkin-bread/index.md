@@ -8,8 +8,9 @@ draft: false
 summary: An easy, reliable pumpkin bread adapted from Once Upon a Chef.
 tags:
   - quick bread
-  - fall
-  - pumpkin spice
+  - seasonal
+  - dessert
+  - pumpkin
 title: Pumpkin Bread Recipe
 ---
 

@@ -8,6 +8,8 @@ draft: false
 summary: A multi-use dough from Brian Lagerstrom.
 tags:
   - dough
+  - bread
+  - base
 title: Brian Lagerstrom's Everything Dough
 ---
 

@@ -1,6 +1,6 @@
 ---
 cover:
-  alt: A screenshot showing standing behind a counter showing a loaf of bread.
+  alt: A screenshot showing a plate of beef stroganoff
   caption: The final dish looks nothing like this. Image by [Correen](https://unsplash.com/@correenwa03) on Unsplash.
   image: cover.jpg
 title: Beef Stroga-Knock-Off
@@ -8,7 +8,10 @@ date: 2025-08-22
 draft: false
 summary: The final dish looks nothing like this, I'm afraid.
 tags:
-  - entrees
+  - entree
+  - beef
+  - mushroom
+  - comfort food
 ---
 
 I'll start with a quick note: I haven't made this in nearly twenty years. I dug
