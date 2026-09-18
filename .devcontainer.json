@@ -18,8 +18,8 @@
                 "shd101wyy.markdown-preview-enhanced",
                 "streetsidesoftware.code-spell-checker",
                 "yzhang.markdown-all-in-one",
-                "openai.chatgpt",
-                "dnut.rewrap-revived"
+                "dnut.rewrap-revived",
+                "Anthropic.claude-code"
             ],
             "settings": {
                 "editor.wordWrap": "on",

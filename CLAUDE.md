@@ -9,25 +9,21 @@ safe, and minimal changes.
 - Read commit rules and writing standards in `CONTRIBUTIONS.md`.
 - For posts, use `content/blog/<slug>/index.md` with images adjacent.
 - Validate locally: `hugo server -D`; lint:
-  `npx markdownlint-cli AGENTS.md -c .markdownlint.json`.
+  `npx markdownlint-cli CLAUDE.md -c .markdownlint.json`.
 - Do not edit `public/`, theme code, or CI unless requested.
 
-## When to edit what
+## Project structure and editing rules
 
-- `content/blog/<slug>/index.md`: Write or update posts; keep images alongside.
-- `hugo.json`: Tweak menus, params, or theme config; justify changes in the PR.
-- `.github/workflows/`: Edit only for deploy/build changes; coordinate in PRs.
-- `themes/PaperMod/`: Do not modify; prefer overrides via project `layouts/`.
-- `public/`: Never edit; it is generated output.
-
-## Project structure and module organization
-
-- `content/`: Author posts at `content/blog/<slug>/index.md` with images in
-  the same folder (e.g., `cover.jpg`).
-- `themes/PaperMod/`: Theme code. Do not modify unless asked.
-- `archetypes/`: Content templates.
-- `public/`: Hugo build output. Never edit.
-- `.github/workflows/`: CI and Pages deploy. Avoid changes unless requested.
+- `content/blog/<slug>/index.md`: Write or update posts; keep images (e.g.,
+  `cover.jpg`) in the same folder.
+- `hugo.json`: Menus, params, and theme config. Justify changes in the PR.
+- `archetypes/`: Content templates for new posts.
+- `.github/workflows/`: CI and Pages deploy. Edit only for deploy/build
+  changes; coordinate in the PR.
+- `themes/PaperMod/`: Vendored theme code. **Never modify** — prefer
+  overrides via project `layouts/`.
+- `public/`: Hugo build output. **Never edit** — it is generated and never
+  committed.
 
 ## Build, test, and development commands
 
@@ -103,8 +99,6 @@ tags: [hugo]
 
 - No secrets are needed; the site is static. Avoid third-party scripts unless
   necessary and document the rationale in the PR.
-- Do not commit generated files (`public/`) or theme vendored changes.
-- Honor the nav and params in `hugo.json`; update intentionally with context.
 
 ## Writing and formatting
 
