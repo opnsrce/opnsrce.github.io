@@ -2,7 +2,7 @@
     "baseURL": "https://opnsrce.github.io",
     "buildDrafts": false,
     "buildFuture": false,
-    "languageCode": "en-us",
+    "locale": "en-us",
     "mainSections": ["blog"],
     "markup": {
         "goldmark": {
