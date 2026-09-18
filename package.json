@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "dev": "hugo serve -D --disableFastRender",
         "lint": "prettier --write .",
         "postinstall": "npx husky"
     },
