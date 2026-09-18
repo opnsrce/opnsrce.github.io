@@ -26,18 +26,18 @@ ENV LC_ALL=en_US.UTF-8
 # Go (for Hugo development)
 RUN apt-get install -y golang-go
 
-# Node.js (latest LTS) and npm (for commitlint, husky, and codex)
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+# Node.js 24 and npm (for commitlint and husky)
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get install -y nodejs
 
-# Update npm to latest version
+# Update npm to latest version (safe on Node 24)
 RUN npm install -g npm@latest
 
 # Hugo installation (extended, auto-detect architecture)
 RUN ARCH=$(dpkg --print-architecture) && \
-    wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-${ARCH}.deb && \
-    dpkg -i hugo_extended_0.146.0_linux-${ARCH}.deb && \
-    rm hugo_extended_0.146.0_linux-${ARCH}.deb
+    wget https://github.com/gohugoio/hugo/releases/download/v0.166.0/hugo_extended_0.166.0_linux-${ARCH}.deb && \
+    dpkg -i hugo_extended_0.166.0_linux-${ARCH}.deb && \
+    rm hugo_extended_0.166.0_linux-${ARCH}.deb
 
 # Clean up APT cache to reduce image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
