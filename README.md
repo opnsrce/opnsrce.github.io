@@ -12,9 +12,14 @@ notes lying around.
 This repo is configured to run in a VS Code devcontainer with Docker.
 
 ```bash
-# Clone repo (directory name is optional)
-git clone git@github.com:opnsrce/opnsrce.github.io.git levihackwithcom
+# Clone repo, including the PaperMod theme submodule
+# (directory name is optional)
+git clone --recurse-submodules \
+  git@github.com:opnsrce/opnsrce.github.io.git levihackwithcom
 cd levihackwithcom
+
+# Already cloned without submodules? Fetch the theme with:
+# git submodule update --init --recursive
 
 # Open in VS Code and let devcontainer spin up
 # Hugo will already be installed inside the container.
@@ -43,13 +48,11 @@ View the site via [localhost][11].
 
 Content lives in `/content/` and is split into:
 
-- `/blog/` → casual posts + updates
-- `/docs/` → technical notes & references
-- `/links/` → curated link dumps
-- `/projects/` → experiments & builds
+- `/blog/` → posts and updates
+- `/recipes/` → cooking recipes
 - `/about/` → short bio page
 
-Each section includes an `_index.md` file used by Hugo to define list pages.
+Sections may include an `_index.md` file used by Hugo to define list pages.
 
 Markdown files follow 80-char wrap (120 for code) enforced via linting.
 
@@ -76,7 +79,7 @@ This repo is solo-maintained but enforces commit & lint standards:
 This project is licensed under the [MIT License][05].
 
 [01]: https://gohugo.io/
-[02]: https://github.com/adityatelange/hugo-PaperDoc
+[02]: https://github.com/adityatelange/hugo-PaperMod
 [03]: https://www.conventionalcommits.org/
 [05]: LICENSE
 [06]: https://prettier.io/
