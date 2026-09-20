@@ -1,6 +1,4 @@
-#!/bin/sh
 set -e
-. "$(dirname "$0")/_/husky.sh"
 
 echo "Running Hugo production build check..."
 hugo --gc --minify
