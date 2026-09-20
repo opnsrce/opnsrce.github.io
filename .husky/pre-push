@@ -1,4 +1,9 @@
 set -e
 
+if ! command -v hugo >/dev/null 2>&1; then
+  echo "hugo not found, skipping build check (CI will build)"
+  exit 0
+fi
+
 echo "Running Hugo production build check..."
 hugo --gc --minify
